@@ -1,0 +1,174 @@
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(75, 70, 92, 0);
+  text-rendering: optimizeLegibility;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  color: rgba(var(--white-rgb), 1);
+  background: rgba(var(--black-rgb), 1);
+}
+
+::selection {
+  color: rgba(var(--white-rgb), 1);
+  background: rgba(var(--black-rgb), 1);
+}
+
+::-moz-selection {
+  color: rgba(var(--white-rgb), 1);
+  background: rgba(var(--black-rgb), 1);
+}
+
+/* root css starts */
+:root {
+  /* Animations */
+  --easeInOut: all 300ms ease-in-out;
+  --linear: all 200ms linear;
+
+  /* Colors */
+  --white-rgb: 255, 255, 255;
+  --black-rgb: 0, 0, 0;
+  --color-primary: #0070f3;
+  --color-secondary: #1c1c1e;
+
+  /* Dark Mode Tokens */
+  --color-background-dark: #1a1a1a;
+  --color-text-dark: #f5f5f5;
+
+  /* Font Families */
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Roboto Condensed", sans-serif;
+
+  /* Font Weights */
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+
+  /* Font Sizes in PX (clamp) */
+  --fs-xs: clamp(12px, 11.6px + 0.125vw, 14px);
+  --fs-sm: clamp(14px, 13.6px + 0.125vw, 16px);
+  --fs-md: clamp(16px, 15.2px + 0.25vw, 20px);
+  --fs-lg: clamp(20px, 19.2px + 0.25vw, 24px);
+  --fs-xl: clamp(24px, 22.4px + 0.5vw, 32px);
+  --fs-xxl: clamp(32px, 28.8px + 1vw, 48px);
+  --fs-xxxl: clamp(48px, 44.8px + 1vw, 64px);
+
+  /* Heading Sizes in PX */
+  --h1-size: var(--fs-xxxl);
+  --h2-size: var(--fs-xxl);
+  --h3-size: var(--fs-xl);
+  --h4-size: var(--fs-lg);
+  --h5-size: var(--fs-md);
+  --h6-size: var(--fs-sm);
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 48px;
+  --space-xl: 64px;
+  --spacer-xxl:80px;
+
+  /* Section-specific clamp spacing */
+  --space-section-sm: clamp(30px, 2.5vw + 1px, 48px);
+  --space-section-md: clamp(40px, 3.5vw + 1px, 64px);
+  --space-section-lg: clamp(50px, 4vw + 2px, 80px);
+
+  /* Breakpoints */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1400px;
+
+  /* Container Width */
+  --container-width: 1200px;
+}
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: var(--fw-bold);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--h2-size);
+  font-weight: var(--fw-bold);
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: var(--fw-semibold);
+  line-height: 1.35;
+}
+
+h4 {
+  font-size: var(--h4-size);
+  font-weight: var(--fw-semibold);
+  line-height: 1.4;
+}
+
+h5 {
+  font-size: var(--h5-size);
+  font-weight: var(--fw-medium);
+  line-height: 1.45;
+}
+
+h6 {
+  font-size: var(--h6-size);
+  font-weight: var(--fw-medium);
+  line-height: 1.5;
+}
+
+/* Theme scheme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--color-background-dark);
+    --color-text: var(--color-text-dark);
+  }
+}
+
+/* media queries */
+@media (min-width: var(--breakpoint-md)) {
+  :root {
+    --container-width: 960px;
+  }
+}
+
+@media (min-width: var(--breakpoint-lg)) {
+  :root {
+    --container-width: 1200px;
+  }
+}
+
+@media (min-width: var(--breakpoint-xl)) {
+  :root {
+    --container-width: 1320px;
+  }
+}
