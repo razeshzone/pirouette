@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="295.072" height="295.072" viewBox="0 0 295.072 295.072">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_106" data-name="Rectangle 106" width="295.072" height="295.072" fill="#feff7b"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_155" data-name="Groupe 155" transform="translate(0 -0.002)">
+    <g id="Groupe_108" data-name="Groupe 108" transform="translate(0 0.002)" clip-path="url(#clip-path)">
+      <path id="Tracé_168" data-name="Tracé 168" d="M277.138,129.6H190.832L251.86,68.577A17.934,17.934,0,1,0,226.5,43.214L165.47,104.242V17.936a17.934,17.934,0,0,0-35.868,0v86.306L68.575,43.214a17.934,17.934,0,0,0-25.362,0h0a17.934,17.934,0,0,0,0,25.362L104.24,129.6H17.934a17.934,17.934,0,0,0,0,35.868H104.24L43.212,226.5a17.934,17.934,0,0,0,0,25.363h0a17.934,17.934,0,0,0,25.362,0L129.6,190.834V277.14a17.934,17.934,0,1,0,35.868,0V190.834L226.5,251.862A17.934,17.934,0,1,0,251.86,226.5l-61.028-61.027h86.306a17.934,17.934,0,0,0,0-35.868" transform="translate(0 -0.002)" fill="#feff7b"/>
+    </g>
+  </g>
+</svg>
