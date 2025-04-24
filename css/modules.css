@@ -1,0 +1,17 @@
+.content-section {
+  position: relative;
+  /* remove below code when you have content */
+  height: 200vh;
+}
+.parallax-container {
+  position: absolute;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.parallax-shape {
+  position: relative;
+  will-change: transform;
+  pointer-events: none;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1));
+}

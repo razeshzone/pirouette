@@ -16,15 +16,18 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   box-sizing: border-box;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 }
-
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
-
+body{
+  overflow-x: hidden;
+}
 ::-moz-selection {
   color: rgba(var(--white-rgb), 1);
   background: rgba(var(--black-rgb), 1);
