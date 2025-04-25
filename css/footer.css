@@ -1,0 +1,93 @@
+@import url(global.css);
+
+.footer{
+  padding: 0;
+}
+.footer .footer-top{
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-md);
+}
+.footer a.text-link{
+  color: var(--color-primary);
+  position: relative;
+  padding:4px 0;
+  font-weight: var(--fw-500);
+}
+.footer a.text-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease-out;
+}
+
+.footer a.text-link:hover::after {
+  width: 100%;
+}
+.f-logo{
+  width: clamp(120px, 3.2px + 4vw, 200px);
+}
+.footer .footer-btm{
+  background-color: var(--color-primary);
+  padding: var(--space-sm) 0;
+  color: rgba(var(--white-rgb),1);
+}
+.footer-btm p{
+  margin-bottom: 0;
+}
+.pre-footer{
+  color: rgba(var(--white-rgb),1);
+  background: rgba(var(--white-rgb),1);
+}
+.view-faq-box{
+  position: relative;
+  top: calc(-1 * var(--space-section-lg));
+  background: var(--color-green);
+}
+.faq-shape-pos-1{
+  top: clamp(58%, 10vh + 5%, 62%);
+  left: auto;
+  right: 10%;
+}
+.faq-shape-pos-1 svg{
+  width: 100%;
+}
+.faq-shape-pos-2{
+  left: auto;
+  right: 1%;
+  top: auto;
+  bottom:-20px;
+}
+.faq-shape-pos-2 svg{
+  max-width: 100%;
+  width: clamp(80px, 10vh + 5%, 120px);
+}
+@media(min-width:320px){
+  .faq-shape-pos-1{
+    left: auto;
+    right: 0px;
+    top: auto;
+    bottom: 30px;
+  }
+    .faq-shape-pos-2{
+    left: auto;
+    right: 0px;
+    top: auto;
+    bottom:-5px;
+    display: none;
+  }  
+}
+@media(min-width:992px){
+  .faq-shape-pos-1{
+    bottom: 45px;
+    right: 120px;
+  }
+  .faq-shape-pos-2{
+    bottom:-20px;
+    right: 0px;
+    display: block;
+  }  
+}

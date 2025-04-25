@@ -3,113 +3,381 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CSS Variables Kit</title>
+    <title>Pirouette et Cabriole</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg pt-0">
-      <div class="container">
-        <a class="navbar-brand pt-0" href="#"><img src="images/logo.svg" alt="Pirouette et Carbiole"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">À PROPOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">NOUS TROUVER</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                ACTIVITÉS À LA MAISON
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">BLOGUE ET RESSOURCES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">DEVENIR MEMBRE</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">ZONE MEMBRE</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <main class="main-content">
-      <div class="content-section">
+    <header class="header">
+      <nav class="navbar navbar-expand-lg pt-0">
         <div class="container">
-          <h1>H1 title</h1>
-        </div>
-        <!-- Parallax shapes -->
-        <div class="parallax-container" style="top: 15%; left: 20%;" data-scroll-speed="0.5" data-mouse-speed="0.1">
-          <div class="parallax-shape">
-            <img src="images/shape-1.svg" alt="">
+          <a class="navbar-brand pt-0" href="#"><img class="img-fluid" src="images/logo.svg" alt="Pirouette et Carbiole"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">À PROPOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">NOUS TROUVER</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACTIVITÉS À LA MAISON
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOGUE ET RESSOURCES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">DEVENIR MEMBRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ZONE MEMBRE</a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div class="parallax-container" style="top: 16%; left: 25%;" data-scroll-speed="1.2" data-mouse-speed="0.3">
-          <div class="parallax-shape">
-            <img src="images/shape-2.svg" alt="">        
+      </nav>  
+    </header>
+<main class="main-content">
+  <section class="featured-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Why Choose Us</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="feature-box p-4 bg-white rounded text-center">
+            <img src="images/shape-1.svg" alt="Icon 1" class="mb-3 icon-inside" width="50">
+            <h5 class="mb-2">Fast Delivery</h5>
+            <p class="mb-0 text-muted">We deliver quality results fast and efficiently.</p>
           </div>
         </div>
-
-        <div class="parallax-container" style="top: 22%; left: 95%;" data-scroll-speed="0.8" data-mouse-speed="0.2">
-          <div class="parallax-shape">
-            <img src="images/shape-3.svg" alt="">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="feature-box p-4 bg-white rounded text-center">
+            <img src="images/shape-1.svg" alt="Icon 2" class="mb-3 icon-inside" width="50">
+            <h5 class="mb-2">Expert Team</h5>
+            <p class="mb-0 text-muted">Our team is skilled and experienced in what we do.</p>
           </div>
         </div>
-
-        <div class="parallax-container" style="top: 55%; left: 52%;" data-scroll-speed="0.5" data-mouse-speed="0.01">
-          <div class="parallax-shape">
-            <img src="images/shape-4.svg" alt="">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="feature-box p-4 bg-white rounded text-center">
+            <img src="images/shape-1.svg" alt="Icon 3" class="mb-3 icon-inside" width="50">
+            <h5 class="mb-2">Clean Design</h5>
+            <p class="mb-0 text-muted">Modern, responsive, and elegant design.</p>
           </div>
         </div>
-
-        <div class="parallax-container" style="top: 72%; left: 75%;" data-scroll-speed="1.2" data-mouse-speed="0.03">
-          <div class="parallax-shape">
-            <img src="images/shape-5.svg" alt="">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="feature-box p-4 bg-white rounded text-center">
+            <img src="images/shape-1.svg" alt="Icon 4" class="mb-3 icon-inside" width="50">
+            <h5 class="mb-2">Customer Support</h5>
+            <p class="mb-0 text-muted">We’re here for you whenever you need help.</p>
           </div>
         </div>
-
-        <div class="parallax-container" style="top: 73%; left: 74%;" data-scroll-speed="0.8" data-mouse-speed="0.02">
-          <div class="parallax-shape">
-            <img src="images/shape-6.svg" alt="">
-          </div>
-        </div>
-
-        <div class="parallax-container" style="top: 82%; left: 75%;" data-scroll-speed="1.2" data-mouse-speed="0.01">
-          <div class="parallax-shape">
-            <img src="images/shape-7.svg" alt="">
-          </div>
-        </div>
-
-        <div class="parallax-container" style="top: 90%; left: 70%;" data-scroll-speed="1.2" data-mouse-speed="0.01">
-          <div class="parallax-shape">
-            <img src="images/shape-8.svg" alt="">
-          </div>
-        </div>
-  
       </div>
+    </div>
+  </section>
+  <section class="contact-wrapper">
+    <div class="container">
+      <div class="content-section">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <div class="mb-3 mb-lg-4">
+              <h2 class="mb-3 mb-lg-4">Devenir membre dès aujourd’hui</h2>
+              <p>Pour rejoindre le programme, il vous suffit de remplir notre formulaire de contact. Une personne de notre équipe reviendra vers vous rapidement.</p>
+            </div>
+            <form action="" method="">
+              <div class="mb-3 mb-lg-4">
+                <h4 class="mb-3 mb-lg-3">Formulaire de contact</h4>
+                <h6 class="mb-2 fw-700">Coordonnées</h6>
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="mb-3">
+                      <label for="firstname" class="form-label">Prénom</label>
+                      <input type="text" class="form-control" id="firstname" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="mb-3">
+                      <label for="lastname" class="form-label">Nom</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-12">
+                    <div class="mb-3">
+                      <label for="fonction" class="form-label">Fonction</label>
+                      <input type="text" class="form-control" id="fonction" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-12">
+                    <div class="mb-3">
+                      <label for="courriel" class="form-label">Courriel</label>
+                      <input type="email" class="form-control" id="courriel" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-12">
+                    <div class="mb-3">
+                      <label for="telephone" class="form-label">Téléphone</label>
+                      <input type="tel" class="form-control" id="telephone" placeholder="">
+                    </div>
+                  </div>
 
-    </main>
-
+                </div>
+              </div>
+              <div class="mb-3">
+                <h6 class="mb-2 fw-700">Informations sur votre organisme</h6>
+                <div class="row">
+                  <div class="col-12 col-lg-12">
+                    <div class="mb-3">
+                      <label class="form-label">Type d’organisme</label>
+                      <div class="d-flex flex-column gap-3">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                          <label class="form-check-label" for="radioDefault1">
+                            Centre communautaire de loisir 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                          <label class="form-check-label" for="radioDefault2">
+                            Organismes à but non lucratif - OBNL
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
+                          <label class="form-check-label" for="radioDefault3">
+                            Organismes communautaires 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault4">
+                          <label class="form-check-label" for="radioDefault4">
+                            Municipalité (moins de 10 000 habitants) 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault5">
+                          <label class="form-check-label" for="radioDefault5">
+                            Municipalité (10 000 à 24 999 habitants) Municipalité (25 000 habitants et plus) Autre
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault6">
+                          <label class="form-check-label" for="radioDefault6">
+                            Municipalité (25 000 habitants et plus) 
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault7">
+                          <label class="form-check-label" for="radioDefault7">
+                            Autre
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-12">
+                    <div class="mb-3">
+                      <label for="address" class="form-label">Adresse de l’organisme</label>
+                      <input type="text" class="form-control" id="address" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="mb-3">
+                      <label for="ville" class="form-label">Ville</label>
+                      <input type="text" class="form-control" id="ville" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="mb-3">
+                      <label for="postalcode" class="form-label">Code postal</label>
+                      <input type="text" class="form-control" id="postalcode" placeholder="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-12">
+                    <div class="mb-3">
+                      <label for="comments" class="form-label">Commentaires (optionnel)</label>
+                      <textarea class="form-control" id="comments" rows="4"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-0"><button type="submit" class="btn btn-secondary">Envoyer ma demande</button></div>
+            </form>
+          </div>
+          <div class="d-none d-lg-block position-relative col-lg-4">
+            <div class="parallax-container contactform-shape-pos-1" data-scroll-speed="1.2" data-mouse-speed="0.01">
+              <div class="parallax-shape">
+                <svg width="167.000000" height="167.000000" viewBox="0 0 167 167" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect id="Groupe 55" width="167.000000" height="167.000000" fill="#FFFFFF" fill-opacity="0"/>
+                  <mask id="mask1_2036" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="167.000000" height="167.000000">
+                    <g style="mix-blend-mode:normal">
+                      <rect id="Rectangle 90" width="167.000000" height="167.000000" fill="#3C9851" fill-opacity="1.000000"/>
+                    </g>
+                  </mask>
+                  <g mask="url(#mask1_2036)">
+                    <g style="mix-blend-mode:normal">
+                      <path id="Tracé 109" d="M167 83.49C111.33 98.87 98.87 111.33 83.5 167C68.12 111.33 55.66 98.87 0 83.49C55.66 68.12 68.12 55.66 83.5 0C98.87 55.66 111.33 68.12 167 83.49Z" fill="#3C9851" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    </g>
+                  </g>
+                </svg>                          
+              </div>
+            </div>
+            <div class="parallax-container contactform-shape-pos-2" data-scroll-speed="1.2" data-mouse-speed="0.01">
+              <div class="parallax-shape">
+                <svg width="43.967773" height="43.967773" viewBox="0 0 43.9678 43.9678" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                   
+                  <mask id="mask1_2042" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="43.967773" height="43.967773">
+                    <g style="mix-blend-mode:normal">
+                      <rect id="Rectangle 106" width="43.967529" height="43.967529" fill="#005175" fill-opacity="1.000000"/>
+                    </g>
+                  </mask>
+                  <g mask="url(#mask1_2042)">
+                    <g style="mix-blend-mode:normal">
+                      <path id="Tracé 168" d="M41.29 19.31L28.43 19.31L37.52 10.21C38.57 9.17 38.57 7.48 37.52 6.43C36.48 5.39 34.79 5.39 33.74 6.43L24.65 15.53L24.65 2.67C24.65 1.19 23.45 0 21.98 0C20.5 0 19.31 1.19 19.31 2.67L19.31 15.53L10.21 6.43C9.17 5.39 7.48 5.39 6.43 6.43C5.39 7.48 5.39 9.17 6.43 10.21L15.53 19.31L2.67 19.31C1.19 19.31 0 20.5 0 21.98C0 23.45 1.19 24.65 2.67 24.65L15.53 24.65L6.43 33.74C5.39 34.79 5.39 36.48 6.43 37.52C7.48 38.57 9.17 38.57 10.21 37.52L19.31 28.43L19.31 41.29C19.31 42.77 20.5 43.96 21.98 43.96C23.45 43.96 24.65 42.77 24.65 41.29L24.65 28.43L33.74 37.52C34.79 38.57 36.48 38.57 37.52 37.52C38.57 36.48 38.57 34.79 37.52 33.74L28.43 24.65L41.29 24.65C42.77 24.65 43.96 23.45 43.96 21.98C43.96 20.5 42.77 19.31 41.29 19.31Z" fill="#005175" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    </g>
+                  </g>
+                </svg>
+                          
+              </div>
+            </div>
+            <div class="parallax-container contactform-shape-pos-3" data-scroll-speed="1.2" data-mouse-speed="0.01">
+              <div class="parallax-shape">
+                <svg width="149.262207" height="149.262207" viewBox="0 0 149.262 149.262" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                   <rect id="Groupe 57" width="149.262268" height="149.262268" fill="#FFFFFF" fill-opacity="0"/>
+                  <mask id="mask1_2039" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="149.262207" height="149.262207">
+                    <g style="mix-blend-mode:normal">
+                      <rect id="Rectangle 91" x="34.949219" width="119.536377" height="119.536377" transform="rotate(17 34.949219 0.000000)" fill="#F55057" fill-opacity="1.000000"/>
+                    </g>
+                  </mask>
+                  <g mask="url(#mask1_2039)">
+                    <g style="mix-blend-mode:normal">
+                      <path id="Tracé 110" d="M93.65 80.44C149.17 151.59 96.74 179.47 68.81 93.65C-2.33 149.17 -30.21 96.74 55.6 68.81C0.08 -2.33 52.51 -30.21 80.44 55.6C151.59 0.08 179.47 52.51 93.65 80.44Z" fill="#F55057" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer text-center text-sm-start">
+  <div class="pre-footer text-center">
+    <div class="container">
+      <div class="view-faq-box px-3 px-lg-5 py-5 rounded-4 content-section">
+        <h2 class="mb-3 mb-lg-4 fw-500">Besoin d’informations complémentaires ?</h2>
+        <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary px-3 py-2"><span class="fw-700 me-2">CONSULTER LA FAQ</span><i class="fas fa-arrow-right"></i></a></div>
+        <div class="parallax-container faq-shape-pos-1" data-scroll-speed="1.2" data-mouse-speed="0.01">
+          <div class="parallax-shape">
+            <svg width="40.619141" height="37.784180" viewBox="0 0 40.6191 37.7842" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">               
+              <g style="mix-blend-mode:normal">
+                <path id="Tracé 361" d="M32.4 32.4C42.13 24.23 43.4 9.73 35.23 0L23.37 9.95C26.04 13.13 25.62 17.87 22.44 20.53C19.26 23.2 14.53 22.79 11.86 19.61L0 29.56C8.16 39.29 22.67 40.56 32.4 32.4Z" fill="#FFCB5C" fill-opacity="1.000000" fill-rule="nonzero"/>
+              </g>
+            </svg>            
+          </div>
+        </div>
+        <div class="parallax-container faq-shape-pos-2" data-scroll-speed="1.2" data-mouse-speed="0.01">
+          <div class="parallax-shape">
+            <svg width="119.872070" height="116.995117" viewBox="0 0 119.872 116.995" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+               
+              <mask id="mask1_1227" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="119.872070" height="116.995117">
+                <g style="mix-blend-mode:normal">
+                  <rect id="Rectangle 41" y="29.736816" width="96.229820" height="91.748779" transform="rotate(-18 0.000000 29.736816)" fill="#54CDFF" fill-opacity="1.000000"/>
+                </g>
+              </mask>
+              <g mask="url(#mask1_1227)">
+                <g style="mix-blend-mode:normal">
+                  <path id="Tracé 103" d="M105.69 43.62C107.08 47.91 95.29 54.22 95.29 58.49C95.29 62.92 107.04 69.25 105.69 73.37C104.34 77.53 91.1 75.73 88.53 79.28C85.98 82.78 91.8 94.83 88.22 97.43C84.76 99.94 75.14 90.72 70.85 92.11C66.57 93.5 64.2 106.62 59.93 106.62C55.51 106.62 53.13 93.46 49.01 92.12C44.85 90.76 35.19 99.99 31.65 97.42C28.14 94.88 33.93 82.86 31.33 79.28C28.82 75.82 15.56 77.64 14.17 73.36C12.78 69.08 24.57 62.76 24.57 58.49C24.57 54.06 12.83 47.74 14.17 43.62C15.53 39.46 28.76 41.25 31.33 37.71C33.88 34.2 28.06 22.16 31.64 19.56C35.1 17.05 44.73 26.27 49.01 24.87C53.29 23.48 55.66 10.37 59.93 10.37C64.36 10.37 66.73 23.53 70.85 24.87C75.01 26.23 84.67 16.99 88.21 19.56C91.72 22.11 85.93 34.13 88.54 37.71C91.05 41.16 104.3 39.34 105.69 43.62Z" fill="#54CDFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </g>
+              </g>
+            </svg>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <div class="row">
+            <div class="col-12 col-sm-4"><span class="mb-3 mb-lg-0"><img class="img-fluid f-logo" src="images/logo-footer.svg" alt="Pirouette et Cabriole"></span></div>
+            <div class="col-12 col-sm-4"><span class="fs-xxs fw-700 mb-2 d-flex justify-content-center justify-content-sm-start">Un programme de la</span><img class="img-fluid" src="images/fqdccl.svg" alt=""></div>
+            <div class="col-12 col-sm-4"><span class="fs-xxs fw-700 mb-2 d-flex justify-content-center justify-content-sm-start">Avec la participation de</span><img class="img-fluid" src="images/quebec.svg" alt=""></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="row">
+            <div class="col-12 col-sm-6">
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <ul class="unordered-list nav d-flex flex-column">
+                    <li><a class="nav-link text-link" href="#">À propos</a></li>
+                    <li><a class="nav-link text-link" href="#">Nous trouver</a></li>
+                    <li><a class="nav-link text-link" href="#">Activités à la maison</a></li>
+                    <li><a class="nav-link text-link" href="#">Blogue et ressources</a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-12">
+                  <ul class="unordered-list nav d-flex flex-column">
+                    <li><a class="nav-link text-link" href="#">Devenir membre</a></li>
+                    <li><a class="nav-link text-link" href="#">FAQ</a></li>
+                    <li><a class="nav-link text-link" href="#">Contact</a></li>
+                  </ul>
+                </div>
+    
+              </div>
+            </div>
+            <div class="col-12 col-sm-6">
+              <div class="row">
+                <div class="col-12 col-sm-12">
+                  <ul class="unordered-list nav d-flex flex-column align-items-center align-items-sm-start">
+                    <li><a class="nav-link d-flex flex-row align-items-center" href="#"><i class="fas fa-phone"></i><span class="ms-2">418 686-0012</span></a></li>
+                    <li><a class="nav-link d-flex flex-row align-items-center" href="#"><i class="fas fa-envelope"></i><span class="ms-2">pirouettecabriole@fqccl.org</span></a></li>
+                  </ul>
+                </div>
+                <div class="col-12 col-sm-12">
+                  <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start">
+                    <ul class="unordered-list nav p-0 ps-lg-5 gap-3">
+                      <li><a class="nav-link d-flex flex-row align-items-center fs-base" href="#"><i class="fab fa-facebook"></i></a></li>
+                      <li><a class="nav-link d-flex flex-row align-items-center fs-base" href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>  
+                  </div>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-btm">
+    <div class="container">
+      <p><span class="fs-xxs">Le jardin de Pirouette et Cabriole | © 2025 Tous droits réservés</span></p>
+    </div>
+  </div>
+</footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <!-- GSAP Core + ScrollTrigger -->

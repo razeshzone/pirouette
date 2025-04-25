@@ -1,7 +1,7 @@
+@import url(global.css);
+
 .content-section {
   position: relative;
-  /* remove below code when you have content */
-  height: 200vh;
 }
 .parallax-container {
   position: absolute;
@@ -14,4 +14,57 @@
   will-change: transform;
   pointer-events: none;
   filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1));
+  transform-origin: center center;
 }
+
+/* parallax css ends */
+
+.contact-wrapper{
+  background: var(--color-yellow);
+  padding-top: var(--space-section-lg);
+  padding-bottom: calc(var(--space-section-lg) + var(--space-section-lg));
+}
+.contact-wrapper h4{
+  font-size: var(--fs-lg);
+}
+.contact-wrapper input[type="text"],
+.contact-wrapper input[type="email"],
+.contact-wrapper input[type="tel"],
+.contact-wrapper input[type="radio"],
+.contact-wrapper textarea{
+  border-radius: var(--space-xs);
+  background-color: transparent;
+  border-color: var(--color-primary);
+}
+.contact-wrapper input[type="radio"]+label{
+  cursor: pointer;
+}
+.contact-wrapper .form-check-input:checked[type=radio]{
+  background-color: var(--color-primary);
+}
+.contact-wrapper textarea:focus{
+  background-color: transparent;
+}
+.contactform-shape-pos-1{
+  top: clamp(10%, 10vh + 5%, 12%);
+  left: auto;
+  right: 8%;
+}
+.contactform-shape-pos-1 svg{
+  width: 100%;
+}
+.contactform-shape-pos-2{
+  left: auto;
+  right: 2%;
+  top: clamp(50%, 10vh + 5%, 55%);
+}
+.contactform-shape-pos-2 svg{
+  max-width: 100%;
+  width: clamp(80px, 10vh + 5%, 120px);
+}
+.contactform-shape-pos-3{
+  top: clamp(58%, 10vh + 5%, 62%);
+  left: auto;
+  right: 20%;
+}
+
