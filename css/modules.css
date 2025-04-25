@@ -69,4 +69,11 @@
   left: auto;
   right: 20%;
 }
-
+.feature-box{
+  border: solid 1px var(--color-light-blue);
+  border-radius: var(--space-sm);
+  padding: 26px;
+}
+.icon-shift{
+  margin-top: -50px;
+}
