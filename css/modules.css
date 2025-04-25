@@ -73,7 +73,42 @@
   border: solid 1px var(--color-light-blue);
   border-radius: var(--space-sm);
   padding: 26px;
+  color: var(--color-primary);
+  position: relative;
+  z-index: 10;
+  background-color: transparent;
 }
 .icon-shift{
   margin-top: -50px;
+}
+.feature-box h5{
+  color: var(--color-light-blue);
+}
+.feature-box ul li img{
+  margin-top: 5px;
+}
+.top-shape-pos-1{
+  top: clamp(20%, 10vh + 5%, 22%);
+  left: auto;
+}
+.top-shape-pos-1 svg{
+  width: 100%;
+}
+.top-shape-pos-2{
+  left: 35%;
+  top: 50%;
+}
+.faq-shape-pos-2 svg{
+  max-width: 100%;
+  width: clamp(80px, 10vh + 5%, 120px);
+}
+.top-shape-pos-3{
+  left: 50%;
+  top: 75%;
+  z-index: -1;
+}
+.top-shape-pos-4{
+  left: 95%;
+  top: 1%;
+  z-index: -1;
 }
