@@ -27,6 +27,10 @@
 .footer a.text-link:hover::after {
   width: 100%;
 }
+.footer-top .nav-link>span,
+.footer-top .nav-link>i{
+  color: var(--color-primary);
+}
 .f-logo{
   width: clamp(120px, 3.2px + 4vw, 200px);
 }
