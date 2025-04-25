@@ -31,7 +31,7 @@ if (typeof gsap !== 'undefined') {
       // Apply rotation only to the parallax container
       gsap.to(container, {
         yPercent: scrollSpeed * 100,
-        rotation: scrollSpeed * 360,  // Apply rotation to the container
+        // rotation: scrollSpeed * 360,  // Apply rotation to the container
         ease: 'sine.inOut',
         scrollTrigger: {
           trigger: container.closest('.content-section'),

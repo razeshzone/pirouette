@@ -7,6 +7,7 @@
   position: absolute;
   will-change: transform;
   pointer-events: none;
+  transform-style: preserve-3d;
 }
 
 .parallax-shape {
@@ -15,6 +16,7 @@
   pointer-events: none;
   filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1));
   transform-origin: center center;
+  transform-style: preserve-3d;
 }
 
 /* parallax css ends */
