@@ -1,10 +1,28 @@
 
 //matchHeight js
-$(function() {
-  $('.matchHeight').matchHeight();
+$(document).ready(function() {
+  // hamburger
+  $(".hamburger").click(function(){
+    $(this).toggleClass("is-active");
+  });
+  
+  // Initialize matchHeight once the DOM is ready
+  const initMatchHeight = () => {
+    // Apply matchHeight to all elements you want to synchronize
+    $('.matchHeight').matchHeight();
+
+    // Re-initialize matchHeight when the window is resized
+    $(window).on('resize', function() {
+      $('.matchHeight').matchHeight();
+    });
+  };
+
+  // Call the initialization function
+  initMatchHeight();
 });
 
-//animations
+// Animation on scroll
+// Ensure GSAP and ScrollTrigger are loaded
 if (typeof gsap !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -14,7 +32,11 @@ if (typeof gsap !== 'undefined') {
   // Animate parallax shape entrance
   const animateShapeEntrance = () => {
     gsap.utils.toArray(".parallax-shape").forEach((shape, i) => {
-      gsap.to(shape, {
+      gsap.fromTo(shape, {
+        opacity: 0,
+        scale: 0.9,
+        y: 30
+      }, {
         opacity: 1,
         scale: 1,
         y: 0,
@@ -25,54 +47,43 @@ if (typeof gsap !== 'undefined') {
     });
   };
 
-  // Animate parallax scroll & mouse
+  // Apply independent parallax effect to each shape
   const applyParallaxEffect = () => {
     document.querySelectorAll('.parallax-container').forEach(container => {
       const shape = container.querySelector('.parallax-shape');
-      const scrollSpeed = parseFloat(container.dataset.scrollSpeed) || 0.5;
-      const mouseSpeed = parseFloat(container.dataset.mouseSpeed) || 0.1;
+      const scrollSpeed = parseFloat(container.dataset.scrollSpeed) || 0.5; // Custom scroll speed for each shape
+      const mouseSpeed = parseFloat(container.dataset.mouseSpeed) || 0.1;  // Custom mouse speed for each shape
 
       shape.style.transformOrigin = "center center";
 
-      // Scroll-based movement (disabled rotation)
-      gsap.to(container, {
-        yPercent: scrollSpeed * 100,
-        ease: 'sine.inOut',
+      // Scroll-based parallax (each shape moves independently)
+      gsap.to(shape, {
+        yPercent: -scrollSpeed * 100, // Individual scroll-based movement
+        ease: "none",
         scrollTrigger: {
           trigger: container.closest('.content-section'),
-          start: 'top top',
-          end: 'bottom bottom',
-          scrub: 1,
+          start: 'top bottom', // starts when the section comes into view
+          end: 'bottom top',  // ends when the section leaves the view
+          scrub: 1, // smoothens the scrolling effect
           invalidateOnRefresh: true
         }
       });
 
-      // Mouse movement animation (only on desktop)
+      // Mouse movement parallax (only for non-touch devices)
       if (!isTouchDevice) {
         let mouseX = 0, mouseY = 0;
         let currentX = 0, currentY = 0;
 
-        const updatePosition = () => {
+        const updateMouseMovement = () => {
           currentX += (mouseX - currentX) * mouseSpeed;
           currentY += (mouseY - currentY) * mouseSpeed;
 
-          gsap.set(shape, {
-            x: currentX,
-            y: currentY
-          });
-
-          requestAnimationFrame(updatePosition);
+          gsap.set(shape, { x: currentX, y: currentY });
+          requestAnimationFrame(updateMouseMovement);
         };
-        updatePosition();
-
-        let lastMove = 0;
-        const throttle = 20;
+        updateMouseMovement();
 
         document.addEventListener('mousemove', (e) => {
-          const now = Date.now();
-          if (now - lastMove < throttle) return;
-          lastMove = now;
-
           mouseX = (e.clientX / window.innerWidth - 0.5) * maxDisplacement;
           mouseY = (e.clientY / window.innerHeight - 0.5) * maxDisplacement;
         });
@@ -80,9 +91,11 @@ if (typeof gsap !== 'undefined') {
     });
   };
 
+  // Call animation functions
   animateShapeEntrance();
   applyParallaxEffect();
 }
+
 
 // ✅ Feature Box Animation (Intro)
 // Run only on tablet & desktop
