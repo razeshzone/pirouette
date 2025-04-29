@@ -82,7 +82,8 @@ header.header{
   word-wrap: break-word; 
   overflow-wrap: break-word;
 }
-.dropdown-item:hover{
+.dropdown-item:hover,
+.dropdown-item:focus{
   color: var(--color-light-blue);
 }
 .navbar-expand-xl .navbar-nav .nav-link{
