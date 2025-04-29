@@ -153,7 +153,7 @@ header.header{
   color: var(--color-primary);
   font-size: var(--fs-md);
   font-weight: var(--fw-400);
-  padding: 4px 0;
+  padding: 6px 0;
   text-align: center;
 }
 .user-status-box .loggedin-link .nav-link:hover,
