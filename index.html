@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar navbar-expand-lg pt-0">
+      <nav class="navbar navbar-expand-xl pt-0">
         <div class="container d-flex justify-content-between align-items-center">
           <div class="logo-area d-flex flex-column pb-3">
             <a class="navbar-brand pt-0" href="#"><img class="img-fluid logo" src="images/logo.svg" alt="Pirouette et Carbiole"></a>
@@ -38,10 +38,11 @@
                   ACTIVITÉS À LA MAISON
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Artichaut l’escargot (6-12 mois)</a></li>
+                  <li><a class="dropdown-item" href="#">Camomille la chenille (12-15 mois) et Persil la fourmi (16-18 mois)</a></li>
+                  <li><a class="dropdown-item" href="#">Cannelle la coccinelle (18 mois-2 ans) et Groseille l’abeille (2-2 ½ ans)</a></li>
+                  <li><a class="dropdown-item" href="#">Fenouil la grenouille (2 ½-3 ans) et Potiron le papillon (3-4 ans)</a></li>
+                  <li><a class="dropdown-item" href="#">Grande Feuille l’écureuil (4-5 ans)</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -55,9 +56,53 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">CONTACT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ZONE MEMBRE</a>
+              </li>              
+              <li class="nav-item dropdown" data-bs-auto-close="false">
+                <a class="nav-link dropdown-toggle bg-white rounded-5 text-green" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>
+                    <span>ZONE MEMBRE</span>
+                    <svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <desc>
+                          Created with Pixso.
+                      </desc>
+                      <defs/>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Icon material-account-circle" d="M15 0C6.71 0 0 6.72 0 15C0 23.28 6.71 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM15 4.5C17.49 4.5 19.5 6.51 19.5 9C19.5 11.49 17.49 13.5 15 13.5C12.51 13.5 10.5 11.49 10.5 9C10.5 6.51 12.51 4.5 15 4.5ZM15 25.8C11.25 25.8 7.93 23.88 6 20.97C6.04 17.98 12 16.35 15 16.35C17.98 16.35 23.95 17.98 24 20.97C22.06 23.88 18.75 25.8 15 25.8Z" fill="#3C9851" fill-opacity="1.000000" fill-rule="nonzero"/>
+                        <path id="Icon material-account-circle" d="M0 15C0 23.28 6.71 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0C6.71 0 0 6.72 0 15ZM19.5 9C19.5 11.49 17.49 13.5 15 13.5C12.51 13.5 10.5 11.49 10.5 9C10.5 6.51 12.51 4.5 15 4.5C17.49 4.5 19.5 6.51 19.5 9ZM6 20.97C6.04 17.98 12 16.35 15 16.35C17.98 16.35 23.95 17.98 24 20.97C22.06 23.88 18.75 25.8 15 25.8C11.25 25.8 7.93 23.88 6 20.97Z" stroke="#000000" stroke-opacity="0" stroke-width="1.000000"/>
+                      </g>
+                    </svg>
+                    
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end p-3 user-status-box">
+                  <form id="login-form" action="">
+                    <div class="form-title fw-700 text-uppercase">SE CONNECTER</div>
+                    <div class="mb-2">
+                      <label for="courriel" class="form-label">Courriel</label>
+                      <input type="email" class="form-control" id="courriel" placeholder="">
+                    </div>
+                    <div class="mb-2">
+                      <label for="password" class="form-label">Mot de passe</label>
+                      <input type="password" class="form-control" id="password" placeholder="">
+                    </div>
+                    <div class="mb-0 d-flex flex-row gap-2 justify-content-between align-items-center">
+                      <a href="#" class="text-link">Mot de passe oublié ?</a>
+                      <button type="submit" class="btn btn-secondary rounded-5">Connexion</button>
+                    </div>
+                  </form>
+                  <div class="loggedin-link">
+                    <ul class="d-flex flex-column p-0">
+                      <li class="nav-item"><span class="mb-2">BONJOUR!</span></li>
+                      <li class="nav-item"><a href="#" class="nav-link">ESPACE MEMBRE</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">RESSOURCES D’ANIMATION</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">OUTILS DE FORMATION</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">TROUSSE DE COMMUNICATION</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">COMMUNAUTÉ ET PROCHAINS ÉVÉNEMENTS</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                      <li class="nav-item"><button type="button" class="btn nav-link logout">SE DÉCONNECTER</button></li>
+                    </ul>
+                    </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -68,7 +113,7 @@
       <section class="featured-section content-section py-5">
         <div class="container">
           <div class="row g-4 justify-content-center position-relative">
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-lg-6 col-xl-3">
               <h3>Les avantages de devenir membre</h3>
               <div class="parallax-container top-shape-pos-1" data-scroll-speed="1.2" data-mouse-speed="0.01">
                 <div class="parallax-shape">
@@ -99,7 +144,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-lg-6 col-xl-3">
               <div class="feature-box matchHeight p-4 mb-4">
                 <span class="text-center w-100 d-flex justify-content-center"><img src="images/icon-edit.svg" alt="Icon 1" class="mb-3 icon-inside icon-shift" width="50"></span>
                 <div class="inner">
@@ -122,7 +167,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-lg-6 col-xl-3">
               <div class="feature-box matchHeight p-4 mb-4">
                 <span class="text-center w-100 d-flex justify-content-center"><img src="images/icon-calendar.svg" alt="Icon 2" class="mb-3 icon-inside icon-shift" width="50"></span>
                 <div class="inner">
@@ -145,7 +190,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
+            <div class="col-12 col-lg-6 col-xl-3">
               <div class="feature-box matchHeight p-4 mb-4">
                 <span class="text-center w-100 d-flex justify-content-center"><img src="images/icon-saving.svg" alt="Icon 3" class="mb-3 icon-inside icon-shift" width="50"></span>
                 <div class="inner">

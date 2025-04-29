@@ -79,7 +79,7 @@ body{
   /* Font Sizes in PX (clamp) */
   --fs-xxs:11px;
   --fs-xs: clamp(12px, 11.6px + 0.125vw, 14px);
-  --fs-sm: clamp(14px, 13.6px + 0.125vw, 16px);
+  --fs-sm: clamp(14px, calc(8px + 0.5vw), 16px);
   --fs-md: clamp(16px, 15.2px + 0.25vw, 20px);
   --fs-lg: clamp(20px, 19.2px + 0.25vw, 24px);
   --fs-xl: clamp(24px, 22.4px + 0.5vw, 32px);
@@ -114,7 +114,7 @@ body{
   --breakpoint-xl: 1400px;
 
   /* Container Width */
-  --container-width: clamp(1200px, 3.2px + 4vw, 96%);
+  /* --container-width: clamp(1200px, 3.2px + 4vw, 96%); */
 }
 
 h1 {

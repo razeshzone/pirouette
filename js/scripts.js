@@ -4,22 +4,198 @@ $(document).ready(function() {
   // hamburger
   $(".hamburger").click(function(){
     $(this).toggleClass("is-active");
-  });
-  
-  // Initialize matchHeight once the DOM is ready
+});
+// Initialize matchHeight once the DOM is ready
   const initMatchHeight = () => {
     // Apply matchHeight to all elements you want to synchronize
     $('.matchHeight').matchHeight();
-
     // Re-initialize matchHeight when the window is resized
     $(window).on('resize', function() {
       $('.matchHeight').matchHeight();
     });
   };
-
   // Call the initialization function
   initMatchHeight();
+
+  // Handle logout click
+$('.logout').on('click', function (e) {
+  e.preventDefault();
+
+  const $dropdownMenu = $(this).closest('.dropdown-menu');
+  const $form = $('#login-form');
+  const $links = $('.loggedin-link');
+
+  // Measure current and target widths
+  const currentWidth = $dropdownMenu.outerWidth();
+  $links.hide();
+  $form.css({ display: 'block', opacity: 0 });
+  const targetWidth = $dropdownMenu.outerWidth();
+
+  // Revert back temporarily to measure
+  $form.hide();
+  $links.show();
+
+  // Animate width change
+  gsap.to($dropdownMenu, {
+    width: targetWidth,
+    duration: 0.3,
+    ease: "power2.inOut"
+  });
+
+  // Animate logout links fade out
+  gsap.to($links, {
+    opacity: 0,
+    duration: 0.2,
+    onComplete: () => {
+      $links.hide();
+      $form.show();
+      gsap.fromTo($form, { opacity: 0 }, { opacity: 1, duration: 0.3 });
+    }
+  });
 });
+
+});
+
+//Dropdown animation
+// Function to check if the device supports touch
+function isTouchDevice() {
+  return window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+}
+
+// Function to animate the dropdown menu
+function animateDropdown($menu, show = true) {
+  if (show) {
+    gsap.fromTo($menu,
+      {opacity: 0, y: 10, scale: 0.98},
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 0.25,
+        ease: "power2.out",
+        clearProps: "opacity,transform"
+      }
+    );
+  } else {
+    gsap.to($menu, {
+      opacity: 0,
+      y: 10,
+      scale: 0.98,
+      duration: 0.2,
+      ease: "power2.in",
+      onComplete: () => {
+        $menu.removeClass('show'); // Bootstrap cleanup
+      }
+    });
+  }
+}
+
+// Bootstrap click triggers for regular dropdown items
+$('.dropdown').not(':last-child').on('show.bs.dropdown', function () {
+  const $menu = $(this).find('.dropdown-menu').first();
+  $menu.addClass('show'); // Important: force Bootstrap to position it correctly
+  animateDropdown($menu, true);
+});
+
+$('.dropdown').not(':last-child').on('hide.bs.dropdown', function () {
+  const $menu = $(this).find('.dropdown-menu').first();
+  animateDropdown($menu, false);
+});
+
+// Handle the last dropdown (login form) - show only on click
+$('.dropdown:last-child').on('show.bs.dropdown', function () {
+  const $menu = $(this).find('.dropdown-menu').first();
+  $menu.addClass('show'); // Important: force Bootstrap to position it correctly
+  animateDropdown($menu, true);
+});
+
+$('.dropdown:last-child').on('hide.bs.dropdown', function () {
+  const $menu = $(this).find('.dropdown-menu').first();
+  animateDropdown($menu, false);
+});
+
+// Hover support for non-touch devices for all dropdowns except the last one
+if (!isTouchDevice()) {
+  $('.dropdown').not(':last-child').each(function () {
+    const $dropdown = $(this);
+    const $menu = $dropdown.find('.dropdown-menu').first();
+
+    $dropdown.hover(
+      function () {
+        $dropdown.addClass('show');
+        $menu.addClass('show');
+        animateDropdown($menu, true);
+      },
+      function () {
+        animateDropdown($menu, false);
+        setTimeout(() => {
+          $dropdown.removeClass('show');
+        }, 200);
+      }
+    );
+  });
+}
+
+//keep dropdown login form visible
+$(document).ready(function () {
+  const $dropdownMenu = $('.dropdown-menu');
+  const $form = $('#login-form');
+  const $links = $('.loggedin-link');
+
+  // Show login form on clicking "Login"
+  $('.dropdown-item').click(function (e) {
+    if ($(this).text().trim().toLowerCase() === 'login') {
+      e.preventDefault();
+      $form.show().css({ opacity: 1 });
+      $links.hide();
+      $dropdownMenu.scrollTop($dropdownMenu[0].scrollHeight);
+    }
+  });
+
+  // Prevent dropdown from closing on click inside
+  $dropdownMenu.on('click', function (e) {
+    e.stopPropagation();
+  });
+
+  // Handle login form submit
+  $form.on('submit', function (e) {
+    e.preventDefault();
+
+    // Animate transition to logged-in view
+    gsap.to($form, {
+      opacity: 0,
+      duration: 0.2,
+      onComplete: () => {
+        $form.hide();
+        $links.css({ display: 'flex', opacity: 0 });
+        gsap.to($links, { opacity: 1, duration: 0.3 });
+
+        // Auto-close dropdown after 10 seconds
+        setTimeout(() => {
+          $('.dropdown').removeClass('show');
+          $dropdownMenu.removeClass('show');
+        }, 10000);
+      }
+    });
+  });
+
+  // Handle logout click
+  $(document).on('click', '.logout', function (e) {
+    e.preventDefault();
+
+    // Animate transition back to login form
+    gsap.to($links, {
+      opacity: 0,
+      duration: 0.2,
+      onComplete: () => {
+        $links.hide();
+        $form.show().css({ opacity: 0 });
+        gsap.to($form, { opacity: 1, duration: 0.3 });
+      }
+    });
+  });
+});
+
 
 // Animation on scroll
 // Ensure GSAP and ScrollTrigger are loaded
