@@ -83,8 +83,10 @@ header.header{
   overflow-wrap: break-word;
 }
 .dropdown-item:hover,
-.dropdown-item:focus{
+.dropdown-item:focus,
+.dropdown-item:active{
   color: var(--color-light-blue);
+  background: transparent;
 }
 .navbar-expand-xl .navbar-nav .nav-link{
   font-weight: var(--fw-700);
@@ -102,12 +104,13 @@ header.header{
   text-align: center;
 }
 .user-status-box{
-  padding: 18px 12px;
+  /* padding: 18px 12px; */
+  padding: 0;
   border-radius: 10px;
   color: var(--color-primary);
   width: max-content;
   min-width: 240px;
-  max-width: 320px;
+  max-width: 340px;
 }
 .user-status-box .fs-md{
   font-size: var(--fs-md);
@@ -149,6 +152,8 @@ header.header{
   color: var(--color-primary);
   font-size: var(--fs-md);
   font-weight: var(--fw-700);
+  width: 100%;
+  display: block;
 }
 .user-status-box .loggedin-link .nav-link{
   color: var(--color-primary);
@@ -156,10 +161,12 @@ header.header{
   font-weight: var(--fw-400);
   padding: 6px 0;
   text-align: center;
+  display: block;
+  border-radius: 0;
 }
 .user-status-box .loggedin-link .nav-link:hover,
 .user-status-box .loggedin-link .nav-link:focus {
-  color: var(--color-light-blue);
+  color: rgba(var(--white-rgb),1);
 }
 .dropdown-menu{
   transition: width 0.3s ease;
@@ -167,16 +174,48 @@ header.header{
   width: 100%;
   max-width: 100% !important;
 }
+
+.loggedin-link .nav-link {
+  position: relative;
+  padding: 0.75rem 1.5rem;
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 0;
+  transition: color 0.3s ease;
+}
+
+.loggedin-link .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-green-light);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.loggedin-link .nav-link:hover::before {
+  transform: translate(-50%, -50%) scale(20); /* Big enough to cover the button */
+  opacity: 1;
+}
+
+
+/* media query */
 @media(min-width:1200px){
   .navbar-expand-xl .navbar-nav .dropdown-menu{
     background: rgba(var(--white-rgb),1);
-    max-width: 320px;
+    max-width: 340px;
     min-width: auto !important;
   }
   .dropdown-menu {
     width: max-content;
     min-width: 240px;
-    max-width: 320px !important;
+    max-width: 340px !important;
   }
   .navbar-expand-xl .navbar-nav .nav-link{
     font-size: var(--fs-sm);
