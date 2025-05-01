@@ -277,6 +277,47 @@
   left: auto;
   right: 1%;
 }
+
+.hero-banner{
+  background: var(--color-green);
+  position: relative;
+  color: rgba(var(--white-rgb), 1);
+}
+.hero-banner:before{
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(var(--white-rgb), 1);
+  clip-path: polygon(0 0, 100% 60%, 100% 100%, 0 80%);
+}
+.hero-player{
+  border-radius:10px;
+  overflow: hidden;
+}
+.banner-shape-pos-1{
+  right: 0;
+  bottom: 20%;
+}
+.mt--2{
+  margin-top: -30px;
+}
+.quick-info-box {
+  border-color: transparent;
+  text-align: center;
+}
+.quick-info-box p{
+  margin-top: 20px;
+}
+.quick-info-box svg{
+  width: clamp(
+    100px,                    /* Minimum size (mobile) */
+    calc(36.6px + 8.25vw),    /* Scaling formula */
+    195px                     /* Maximum size (desktop) */
+  );
+}
 /* media queries starts */
 @media(min-width:320px){
   .main-content{
