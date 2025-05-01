@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pirouette et Cabriole</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-xl pt-0">
+        <div class="container d-flex justify-content-between align-items-center">
+          <div class="logo-area d-flex flex-column pb-3">
+            <a class="navbar-brand pt-0" href="#"><img class="img-fluid logo" src="images/logo.svg" alt="Pirouette et Carbiole"></a>
+          </div>
+          <button class="navbar-toggler hamburger" id="hamburger-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">À PROPOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="member.html">NOUS TROUVER</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACTIVITÉS À LA MAISON
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Artichaut l’escargot (6-12 mois)</a></li>
+                  <li><a class="dropdown-item" href="#">Camomille la chenille (12-15 mois) et Persil la fourmi (16-18 mois)</a></li>
+                  <li><a class="dropdown-item" href="#">Cannelle la coccinelle (18 mois-2 ans) et Groseille l’abeille (2-2 ½ ans)</a></li>
+                  <li><a class="dropdown-item" href="#">Fenouil la grenouille (2 ½-3 ans) et Potiron le papillon (3-4 ans)</a></li>
+                  <li><a class="dropdown-item" href="#">Grande Feuille l’écureuil (4-5 ans)</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOGUE ET RESSOURCES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="member.html">DEVENIR MEMBRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>              
+              <li class="nav-item dropdown" data-bs-auto-close="false">
+                <a class="nav-link dropdown-toggle bg-white rounded-5 text-green" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>
+                    <span>ZONE MEMBRE</span>
+                    <svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <desc>
+                          Created with Pixso.
+                      </desc>
+                      <defs/>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Icon material-account-circle" d="M15 0C6.71 0 0 6.72 0 15C0 23.28 6.71 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM15 4.5C17.49 4.5 19.5 6.51 19.5 9C19.5 11.49 17.49 13.5 15 13.5C12.51 13.5 10.5 11.49 10.5 9C10.5 6.51 12.51 4.5 15 4.5ZM15 25.8C11.25 25.8 7.93 23.88 6 20.97C6.04 17.98 12 16.35 15 16.35C17.98 16.35 23.95 17.98 24 20.97C22.06 23.88 18.75 25.8 15 25.8Z" fill="#3C9851" fill-opacity="1.000000" fill-rule="nonzero"/>
+                        <path id="Icon material-account-circle" d="M0 15C0 23.28 6.71 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0C6.71 0 0 6.72 0 15ZM19.5 9C19.5 11.49 17.49 13.5 15 13.5C12.51 13.5 10.5 11.49 10.5 9C10.5 6.51 12.51 4.5 15 4.5C17.49 4.5 19.5 6.51 19.5 9ZM6 20.97C6.04 17.98 12 16.35 15 16.35C17.98 16.35 23.95 17.98 24 20.97C22.06 23.88 18.75 25.8 15 25.8C11.25 25.8 7.93 23.88 6 20.97Z" stroke="#000000" stroke-opacity="0" stroke-width="1.000000"/>
+                      </g>
+                    </svg>
+                    
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end user-status-box">
+                  <form id="login-form" action="" class="p-3">
+                    <div class="form-title fw-700 text-uppercase">SE CONNECTER</div>
+                    <div class="mb-2">
+                      <label for="courriel" class="form-label">Courriel</label>
+                      <input type="email" class="form-control" id="courriel" placeholder="">
+                    </div>
+                    <div class="mb-2">
+                      <label for="password" class="form-label">Mot de passe</label>
+                      <input type="password" class="form-control" id="password" placeholder="">
+                    </div>
+                    <div class="mb-0 d-flex flex-row gap-2 justify-content-between align-items-center">
+                      <a href="#" class="text-link">Mot de passe oublié ?</a>
+                      <button type="submit" class="btn btn-secondary rounded-5">Connexion</button>
+                    </div>
+                  </form>
+                  <div class="loggedin-link pt-3 pb-3">
+                    <ul class="d-flex flex-column p-0">
+                      <li class="nav-item"><span class="mb-2 w-100 text-center d-block">BONJOUR!</span></li>
+                      <li class="nav-item"><a href="#" class="nav-link">ESPACE MEMBRE</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">RESSOURCES D’ANIMATION</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">OUTILS DE FORMATION</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">TROUSSE DE COMMUNICATION</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">COMMUNAUTÉ ET PROCHAINS ÉVÉNEMENTS</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                      <li class="nav-item d-flex justify-content-center"><button type="button" class="btn nav-link logout ps-3 pe-3 w-100">SE DÉCONNECTER</button></li>
+                    </ul>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+    </header>
+    <main class="main-content">
+      <div class="page-title-block">
+        <div class="container">
+          <span class="slogan fw-500 text-white pt-2">FAQ</span>  
+        </div>
+      </div>
+      <section class="faq-section content-section py-5">
+        <div class="container pb-5 mb-5 position-relative">
+          <div class="d-flex flex-column justify-content-between align-items-center w-100">
+            <!-- Nav Tabs -->
+            <ul class="nav nav-tabs d-flex gap-3 flex-column flex-lg-row" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link btn-blue active rounded-3 fw-700 px-3 py-3" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">
+                  Parents — Déroulement et organisation des ateliers
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link btn-green rounded-3 fw-700 px-3 py-3" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">
+                  Organismes — Devenir membre du Jardin Pirouette et Cabriole
+                </button>
+              </li>
+            </ul>                
+          </div>
+          <div class="row mt-3">
+            <div class="col-12 col-lg-8 col-xl-10 offset-lg-2 offset-xl-1">
+                <!-- Tab Content -->
+                <div class="tab-content position-relative z-1 mt-3" id="myTabContent">
+                  <!-- Tab 1 -->
+                  <div class="tab-pane bg-blue-300 fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                    <h4 class="mb-3">Déroulement et organisation des ateliers</h4>
+                    <div class="accordion" id="accordionTab1">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne1">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1">
+                            Comment inscrire mon enfant à un atelier ?
+                          </button>
+                        </h2>
+                        <div id="collapseOne1" class="accordion-collapse collapse show" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            L’inscription se fait directement auprès d’un organisme adhérent au programme. Consultez notre carte interactive pour trouver un atelier près de chez vous et connaître les modalités d’inscription.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1">
+                            Quel est le tarif par atelier ?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Les tarifs varient selon les organismes. Contactez votre organisme local pour connaître les prix et les éventuelles formules d’abonnement.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1">
+                            Combien de séances y a-t-il par session ?
+                          </button>
+                        </h2>
+                        <div id="collapseThree1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Le programme fonctionne généralement par session de plusieurs semaines. Le nombre exact de séances dépend de l’organisme organisateur.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour1">
+                            Combien de temps dure une séance ?
+                          </button>
+                        </h2>
+                        <div id="collapseFour1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Chaque atelier dure environ <strong>45 minutes à 1 heure</strong>, selon l’âge des enfants et les activités proposées.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive1">
+                            Où puis-je trouver un atelier près de chez moi ?
+                          </button>
+                        </h2>
+                        <div id="collapseFive1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix1">
+                            À partir de quel âge mon enfant peut-il participer aux ateliers ?
+                          </button>
+                        </h2>
+                        <div id="collapseSix1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven1">
+                            Quelles sont les tranches d’âge des ateliers ?
+                          </button>
+                        </h2>
+                        <div id="collapseSeven1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight1">
+                            Si mon enfant est en avance sur le plan moteur, est-ce possible de l’inscrire dans un groupe plus âgé ?
+                          </button>
+                        </h2>
+                        <div id="collapseEight1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine1">
+                            Mon enfant doit-il obligatoirement être accompagné lors des ateliers ?
+                          </button>
+                        </h2>
+                        <div id="collapseNine1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen1">
+                            Puis-je inscrire mon enfant à un atelier d’essai avant de m’engager pour une session complète ?
+                          </button>
+                        </h2>
+                        <div id="collapseTen1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEleven1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven1">
+                            Quels équipements faut-il prévoir pour les ateliers ?
+                          </button>
+                        </h2>
+                        <div id="collapseEleven1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwelve1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve1">
+                            Dois-je acheter du matériel spécifique pour mon enfant ?
+                          </button>
+                        </h2>
+                        <div id="collapseTwelve1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThirteen1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen1">
+                            Qui anime les ateliers ?
+                          </button>
+                        </h2>
+                        <div id="collapseThirteen1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFourteen1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen1">
+                            L’équipe d’animation s’adapte-t-elle aux besoins spécifiques des enfants ?
+                          </button>
+                        </h2>
+                        <div id="collapseFourteen1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFifteen1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen1">
+                            Puis-je pratiquer les activités chez moi avec mon enfant ?
+                          </button>
+                        </h2>
+                        <div id="collapseFifteen1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSixteen1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen1">
+                            Les salles et le matériel sont-ils disponibles pour une pratique libre ?
+                          </button>
+                        </h2>
+                        <div id="collapseSixteen1" class="accordion-collapse collapse" data-bs-parent="#accordionTab1">
+                          <div class="accordion-body">
+                            Content for Tab 1 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Tab 2 -->
+                  <div class="tab-pane bg-green-300 fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                    <h4 class="mb-3">Devenir membre du Jardin Pirouette et Cabriole</h4>
+                    <div class="accordion" id="accordionTab2">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne2">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2">
+                            Quels sont les critères pour devenir membre ?
+                          </button>
+                        </h2>
+                        <div id="collapseOne2" class="accordion-collapse collapse show" data-bs-parent="#accordionTab2">
+                          <div class="accordion-body">
+                            <p>Le programme Le jardin Pirouette et Cabriole est ouvert aux organisations souhaitant offrir des ateliers de psychomotricité aux enfants de 0 à 5 ans. Peuvent devenir membres :</p>
+                            <ul>
+                              <li>Les centres communautaires de loisir</li>
+                              <li>Les organismes à but non lucratif - OBNL</li>
+                              <li>Les organismes communautaires</li>
+                              <li>Les municipalités et services de loisirs</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2">
+                            Comment devenir membre ?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo2" class="accordion-collapse collapse" data-bs-parent="#accordionTab2">
+                          <div class="accordion-body">
+                            <p>Pour rejoindre le programme, il vous suffit de remplir notre formulaire de contact. Une personne de notre équipe vous contactera pour vous fournir davantage d’informations.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2">
+                            Quel est le coût pour devenir membre ?
+                          </button>
+                        </h2>
+                        <div id="collapseThree2" class="accordion-collapse collapse" data-bs-parent="#accordionTab2">
+                          <div class="accordion-body">
+                            Le coût d’adhésion varie selon la structure de votre organisation. Pour connaître les détails et les tarifs appliqués, nous vous invitons à nous contacter.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour2">
+                            Est-ce que l’adhésion comprend la livraison de matériel pour animer des ateliers ?
+                          </button>
+                        </h2>
+                        <div id="collapseFour2" class="accordion-collapse collapse" data-bs-parent="#accordionTab2">
+                          <div class="accordion-body">
+                            L’adhésion inclut l’accès aux ressources pédagogiques, aux guides d’animation, aux formations et un accès en tout temps à notre zone membre, mais ne couvre pas le matériel physique.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive2">
+                            Combien de temps dure la formation pour animer les ateliers du programme ?
+                          </button>
+                        </h2>
+                        <div id="collapseFive2" class="accordion-collapse collapse" data-bs-parent="#accordionTab2">
+                          <div class="accordion-body">
+                            Content for Tab 2 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix2">
+                            Aurais-je accès à tous les outils et activités partagés pendant la formation ?
+                          </button>
+                        </h2>
+                        <div id="collapseSix2" class="accordion-collapse collapse" data-bs-parent="#accordionTab2">
+                          <div class="accordion-body">
+                            Content for Tab 2 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven2">
+                            Quels outils me seront mis à disposition dès mon adhésion ?
+                          </button>
+                        </h2>
+                        <div id="collapseSeven2" class="accordion-collapse collapse" data-bs-parent="#accordionTab2">
+                          <div class="accordion-body">
+                            Content for Tab 2 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight2">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight2">
+                            Existe-t-il une communauté pour échanger sur nos bons coups et partager des idées d’activités ?
+                          </button>
+                        </h2>
+                        <div id="collapseEight2" class="accordion-collapse collapse" data-bs-parent="#accordionTab2">
+                          <div class="accordion-body">
+                            Content for Tab 2 - Accordion
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>              
+            </div>
+          </div>
+          <div class="parallax-container faq-tab-shape-pos-1" data-scroll-speed="1.0" data-mouse-speed="0.01">
+            <div class="parallax-shape">
+              <svg width="72.165039" height="72.164551" viewBox="0 0 72.165 72.1646" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g style="mix-blend-mode:normal">
+                  <path id="Tracé 369" d="M30.54 0L30.54 15.58L22.76 2.1L13.24 7.6L21.03 21.09L7.56 13.31L2.06 22.83L15.56 30.62L0 30.62L0 41.62L15.58 41.62L2.1 49.4L7.6 58.91L21.09 51.12L13.31 64.6L22.83 70.09L30.62 56.6L30.62 72.16L41.62 72.16L41.62 56.58L49.4 70.05L58.91 64.56L51.12 51.06L64.6 58.84L70.09 49.32L56.6 41.53L72.16 41.53L72.16 30.54L56.58 30.54L70.05 22.76L64.56 13.24L51.06 21.03L58.84 7.56L49.32 2.06L41.53 15.56L41.53 0L30.54 0Z" fill="#BD2C32" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </g>
+              </svg>                
+            </div>
+          </div>
+          <div class="parallax-container faq-tab-shape-pos-2" data-scroll-speed="0.5" data-mouse-speed="0.02">
+            <div class="parallax-shape">
+              <svg width="119.219727" height="119.219482" viewBox="0 0 119.22 119.219" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask1_2861" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="119.219727" height="119.219482">
+                  <g style="mix-blend-mode:normal">
+                    <rect id="Rectangle 101" width="119.219482" height="119.219482" fill="#66A2FC" fill-opacity="1.000000"/>
+                  </g>
+                </mask>
+                <g mask="url(#mask1_2861)">
+                  <g style="mix-blend-mode:normal">
+                    <path id="Tracé 132" d="M0 59.6C31.39 63.02 56.19 87.82 59.6 119.21C63.02 87.82 87.82 63.02 119.21 59.6C87.82 56.19 63.02 31.39 59.6 0C56.19 31.39 31.39 56.19 0 59.6Z" fill="#66A2FC" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  </g>
+                </g>
+              </svg>
+                             
+            </div>
+          </div>
+          <div class="parallax-container faq-tab-shape-pos-3" data-scroll-speed="1.2" data-mouse-speed="0.03">
+            <div class="parallax-shape">
+              <svg width="202.082031" height="201.007324" viewBox="0 0 202.082 201.007" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask1_2870" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="202.082031" height="201.007446">
+                  <g style="mix-blend-mode:normal">
+                    <rect id="Rectangle 227" width="202.082031" height="201.007401" fill="#CCFFCC" fill-opacity="1.000000"/>
+                  </g>
+                </mask>
+                <g mask="url(#mask1_2870)">
+                  <g style="mix-blend-mode:normal">
+                    <path id="Tracé 416" d="M49.99 100.5L51.07 100.5C23.46 100.5 1.07 122.88 1.07 150.5L1.07 201L51.57 201C79.19 201 101.57 178.62 101.57 151C101.57 178.62 123.96 201 151.57 201L202.08 201L202.08 150.5C202.08 122.88 179.69 100.5 152.08 100.5L151 100.5C178.62 100.5 201 78.11 201 50.5L201 -0.01L150.5 -0.01C122.88 -0.01 100.5 22.38 100.5 49.99C100.5 22.38 78.11 -0.01 50.5 -0.01L0 -0.01L0 50.5C0 78.11 22.38 100.5 49.99 100.5Z" fill="#CCFFCC" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="parallax-container faq-tab-shape-pos-4" data-scroll-speed="1.1" data-mouse-speed="0.01">
+            <div class="parallax-shape">
+              <svg width="217.224609" height="202.063660" viewBox="0 0 217.225 202.064" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g style="mix-blend-mode:normal">
+                  <path id="Tracé 368" d="M173.28 173.28C225.32 129.62 232.11 52.03 188.44 0L125 53.23C139.26 70.23 137.05 95.57 120.05 109.84C103.05 124.1 77.7 121.89 63.44 104.89L0 158.12C43.66 210.16 121.24 216.95 173.28 173.28Z" fill="#FFCB5C" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </g>
+              </svg>              
+            </div>
+          </div>
+          <div class="parallax-container faq-tab-shape-pos-5" data-scroll-speed="1.4" data-mouse-speed="0.04">
+            <div class="parallax-shape">
+              <svg width="105.000000" height="105.000000" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <mask id="mask1_2873" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="105.000000" height="105.000000">
+                  <g style="mix-blend-mode:normal">
+                    <rect id="Rectangle 228" width="105.000000" height="105.000000" fill="#E9FD78" fill-opacity="1.000000"/>
+                  </g>
+                </mask>
+                <g mask="url(#mask1_2873)">
+                  <g style="mix-blend-mode:normal">
+                    <path id="Tracé 417" d="M52.44 0C23.48 0 0 23.48 0 52.44C0 81.41 23.48 104.89 52.44 104.89L104.89 104.89L104.89 52.44C104.89 23.48 81.41 0 52.44 0Z" fill="#E9FD78" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  </g>
+                </g>
+              </svg>                           
+            </div>
+          </div>
+          <div class="parallax-container faq-tab-shape-pos-6" data-scroll-speed="1.3" data-mouse-speed="0.02">
+            <div class="parallax-shape">
+              <svg width="58.339844" height="58.339722" viewBox="0 0 58.3398 58.3397" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect id="Groupe 217" width="58.339706" height="58.339706" fill="#FFFFFF" fill-opacity="0"/>
+                <mask id="mask1_2867" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="58.339844" height="58.339722">
+                  <g style="mix-blend-mode:normal">
+                    <rect id="Rectangle 91" x="13.660156" width="46.721237" height="46.721237" transform="rotate(17 13.660156 0.000000)" fill="#005175" fill-opacity="1.000000"/>
+                  </g>
+                </mask>
+                <g mask="url(#mask1_2867)">
+                  <g style="mix-blend-mode:normal">
+                    <path id="Tracé 110" d="M36.6 31.44C58.3 59.24 37.81 70.14 26.89 36.6C-0.91 58.3 -11.81 37.81 21.73 26.89C0.03 -0.91 20.52 -11.81 31.44 21.73C59.25 0.03 70.14 20.52 36.6 31.44Z" fill="#005175" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  </g>
+                </g>
+              </svg>                                       
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer text-center text-sm-start">
+      <div class="pre-footer text-center">
+        <div class="container">
+          <div class="view-faq-box bg-yellow px-3 px-lg-5 py-5 rounded-4 content-section">
+            <h2 class="mb-3 mb-lg-4 fw-500 color-blue">Besoin d’informations complémentaires ?</h2>
+            <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary px-3 py-2"><span class="fw-700 me-2">Contactez-nous</span><i class="fas fa-arrow-right"></i></a></div>
+            <div class="parallax-container faq-shape-pos-3" data-scroll-speed="1.2" data-mouse-speed="0.03">
+              <div class="parallax-shape">
+                <svg width="43.209961" height="47.102295" viewBox="0 0 43.21 47.1023" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g style="mix-blend-mode:normal">
+                    <path id="Tracé 130" d="M5.42 18.12L15.39 12.36C20.79 9.24 27.72 11.1 30.84 16.5C33.96 21.9 32.1 28.83 26.7 31.95L16.73 37.7L22.15 47.1L32.12 41.34C42.72 35.22 46.35 21.67 40.23 11.08C34.12 0.48 20.57 -3.15 9.97 2.97L0 8.73L5.42 18.12Z" fill="#F55057" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  </g>
+                </svg>
+                           
+              </div>
+            </div>
+            <div class="parallax-container faq-shape-pos-4" data-scroll-speed="1.1" data-mouse-speed="0.05">
+              <div class="parallax-shape">
+                <svg width="102.316406" height="102.316406" viewBox="0 0 102.316 102.316" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <rect id="Groupe 94" width="102.316406" height="102.316406" fill="#FFFFFF" fill-opacity="0"/>
+                  <mask id="mask1_2864" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="102.316406" height="102.316406">
+                    <g style="mix-blend-mode:normal">
+                      <rect id="Rectangle 91" y="33.542969" width="76.517410" height="76.517410" transform="rotate(-26 0.000000 33.542969)" fill="#3C9851" fill-opacity="1.000000"/>
+                    </g>
+                  </mask>
+                  <g mask="url(#mask1_2864)">
+                    <g style="mix-blend-mode:normal">
+                      <path id="Tracé 110" d="M62.6 45.57C119.65 54.64 107.27 90.58 56.74 62.6C47.67 119.65 11.73 107.27 39.71 56.74C-17.34 47.67 -4.97 11.73 45.57 39.71C54.64 -17.34 90.58 -4.97 62.6 45.57Z" fill="#3C9851" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    </g>
+                  </g>
+                </svg>                     
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-5">
+              <div class="row">
+                <div class="col-12 col-sm-4"><span class="mb-3 mb-xl-0"><img class="img-fluid f-logo" src="images/logo-footer.svg" alt="Pirouette et Cabriole"></span></div>
+                <div class="col-12 col-sm-4"><span class="fs-xxs fw-700 mb-2 d-flex justify-content-center justify-content-sm-start">Un programme de la</span><img class="img-fluid" src="images/fqdccl.svg" alt=""></div>
+                <div class="col-12 col-sm-4"><span class="fs-xxs fw-700 mb-2 d-flex justify-content-center justify-content-sm-start">Avec la participation de</span><img class="img-fluid" src="images/quebec.svg" alt=""></div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-7">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-6">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <ul class="unordered-list nav d-flex flex-column">
+                        <li><a class="nav-link text-link" href="#">À propos</a></li>
+                        <li><a class="nav-link text-link" href="#">Nous trouver</a></li>
+                        <li><a class="nav-link text-link" href="#">Activités à la maison</a></li>
+                        <li><a class="nav-link text-link" href="#">Blogue et ressources</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <ul class="unordered-list nav d-flex flex-column">
+                        <li><a class="nav-link text-link" href="#">Devenir membre</a></li>
+                        <li><a class="nav-link text-link" href="#">FAQ</a></li>
+                        <li><a class="nav-link text-link" href="#">Contact</a></li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <ul class="unordered-list nav d-flex flex-column align-items-center align-items-sm-start">
+                        <li><a class="nav-link d-flex flex-row align-items-center" href="#"><i class="fas fa-phone"></i><span class="ms-2">418 686-0012</span></a></li>
+                        <li><a class="nav-link d-flex flex-row align-items-center" href="#"><i class="fas fa-envelope"></i><span class="ms-2">pirouettecabriole@fqccl.org</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start">
+                        <ul class="unordered-list nav p-0 ps-lg-5 gap-3">
+                          <li><a class="nav-link d-flex flex-row align-items-center fs-base" href="#"><i class="fab fa-facebook"></i></a></li>
+                          <li><a class="nav-link d-flex flex-row align-items-center fs-base" href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>  
+                      </div>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-btm">
+        <div class="container">
+          <p><span class="fs-xxs">Le jardin de Pirouette et Cabriole | © 2025 Tous droits réservés</span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- GSAP Core + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js" integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

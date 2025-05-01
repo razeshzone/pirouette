@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pirouette et Cabriole</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-xl pt-0">
+        <div class="container d-flex justify-content-between align-items-center">
+          <div class="logo-area d-flex flex-column pb-3">
+            <a class="navbar-brand pt-0" href="#"><img class="img-fluid logo" src="images/logo.svg" alt="Pirouette et Carbiole"></a>
+          </div>
+          <button class="navbar-toggler hamburger" id="hamburger-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">À PROPOS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">NOUS TROUVER</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ACTIVITÉS À LA MAISON
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Artichaut l’escargot (6-12 mois)</a></li>
+                  <li><a class="dropdown-item" href="#">Camomille la chenille (12-15 mois) et Persil la fourmi (16-18 mois)</a></li>
+                  <li><a class="dropdown-item" href="#">Cannelle la coccinelle (18 mois-2 ans) et Groseille l’abeille (2-2 ½ ans)</a></li>
+                  <li><a class="dropdown-item" href="#">Fenouil la grenouille (2 ½-3 ans) et Potiron le papillon (3-4 ans)</a></li>
+                  <li><a class="dropdown-item" href="#">Grande Feuille l’écureuil (4-5 ans)</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">BLOGUE ET RESSOURCES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="member.html">DEVENIR MEMBRE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">CONTACT</a>
+              </li>              
+              <li class="nav-item dropdown" data-bs-auto-close="false">
+                <a class="nav-link dropdown-toggle bg-white rounded-5 text-green" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span>
+                    <span>ZONE MEMBRE</span>
+                    <svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <desc>
+                          Created with Pixso.
+                      </desc>
+                      <defs/>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Icon material-account-circle" d="M15 0C6.71 0 0 6.72 0 15C0 23.28 6.71 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM15 4.5C17.49 4.5 19.5 6.51 19.5 9C19.5 11.49 17.49 13.5 15 13.5C12.51 13.5 10.5 11.49 10.5 9C10.5 6.51 12.51 4.5 15 4.5ZM15 25.8C11.25 25.8 7.93 23.88 6 20.97C6.04 17.98 12 16.35 15 16.35C17.98 16.35 23.95 17.98 24 20.97C22.06 23.88 18.75 25.8 15 25.8Z" fill="#3C9851" fill-opacity="1.000000" fill-rule="nonzero"/>
+                        <path id="Icon material-account-circle" d="M0 15C0 23.28 6.71 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0C6.71 0 0 6.72 0 15ZM19.5 9C19.5 11.49 17.49 13.5 15 13.5C12.51 13.5 10.5 11.49 10.5 9C10.5 6.51 12.51 4.5 15 4.5C17.49 4.5 19.5 6.51 19.5 9ZM6 20.97C6.04 17.98 12 16.35 15 16.35C17.98 16.35 23.95 17.98 24 20.97C22.06 23.88 18.75 25.8 15 25.8C11.25 25.8 7.93 23.88 6 20.97Z" stroke="#000000" stroke-opacity="0" stroke-width="1.000000"/>
+                      </g>
+                    </svg>
+                    
+                  </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-end user-status-box">
+                  <form id="login-form" action="" class="p-3">
+                    <div class="form-title fw-700 text-uppercase">SE CONNECTER</div>
+                    <div class="mb-2">
+                      <label for="courriel" class="form-label">Courriel</label>
+                      <input type="email" class="form-control" id="courriel" placeholder="">
+                    </div>
+                    <div class="mb-2">
+                      <label for="password" class="form-label">Mot de passe</label>
+                      <input type="password" class="form-control" id="password" placeholder="">
+                    </div>
+                    <div class="mb-0 d-flex flex-row gap-2 justify-content-between align-items-center">
+                      <a href="#" class="text-link">Mot de passe oublié ?</a>
+                      <button type="submit" class="btn btn-secondary rounded-5">Connexion</button>
+                    </div>
+                  </form>
+                  <div class="loggedin-link pt-3 pb-3">
+                    <ul class="d-flex flex-column p-0">
+                      <li class="nav-item"><span class="mb-2 w-100 text-center d-block">BONJOUR!</span></li>
+                      <li class="nav-item"><a href="#" class="nav-link">ESPACE MEMBRE</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">RESSOURCES D’ANIMATION</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">OUTILS DE FORMATION</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">TROUSSE DE COMMUNICATION</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">COMMUNAUTÉ ET PROCHAINS ÉVÉNEMENTS</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                      <li class="nav-item d-flex justify-content-center"><button type="button" class="btn nav-link logout ps-3 pe-3 w-100">SE DÉCONNECTER</button></li>
+                    </ul>
+                    </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+    </header>
+    <main class="main-content">
+      <div class="page-title-block">
+        <div class="container">
+          <span class="slogan fw-500 text-white pt-2">Contact</span>  
+        </div>
+      </div>
+      <section class="featured-section content-section py-5">
+        <div class="container">
+          <div class="row g-4 justify-content-center position-relative">
+            <div class="col-12 col-lg-6 col-xl-6">
+              <div class="row">
+                <div class="col-12">
+                  <div class="contact-left-box">
+                    <h3 class="mb-3 fw-700">Vous êtes un parent ?</h3>
+                    <div class="mb-4">
+                      <p>Si vous êtes parent et que vous avez des questions sur le programme, nous vous invitons à <a href="#" class="text-link">consulter notre FAQ</a> ou bien à contacter l’organisme qui propose un <a href="#" class="text-link">atelier proche de chez vous</a>.</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <div class="d-flex mb-4">
+                        <a href="#" class="btn btn-primary btn-custom">
+                        <span class="me-1 fw-700">Consulter la FAQ</span>
+                        <svg width="14.994141" height="10.000427" viewBox="0 0 14.9941 10.0004" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g style="mix-blend-mode:normal">
+                            <path id="Icon ionic-ios-arrow-round-forward" d="M9.56 0.19C9.29 0.45 9.29 0.88 9.55 1.14L12.72 4.32L0.67 4.32C0.3 4.32 0 4.62 0 4.99C0 5.37 0.3 5.67 0.67 5.67L12.71 5.67L9.55 8.84C9.29 9.11 9.29 9.54 9.55 9.8C9.82 10.06 10.24 10.06 10.5 9.8L14.8 5.47C14.85 5.41 14.9 5.34 14.94 5.26C14.97 5.18 14.99 5.09 14.99 5C14.99 4.82 14.92 4.66 14.8 4.52L10.5 0.2C10.25 -0.07 9.82 -0.07 9.56 0.19Z" fill="#FFFCF8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            <path id="Icon ionic-ios-arrow-round-forward" d="M9.55 1.14L12.72 4.32L0.67 4.32C0.3 4.32 0 4.62 0 4.99C0 5.37 0.3 5.67 0.67 5.67L12.71 5.67L9.55 8.84C9.29 9.11 9.29 9.54 9.55 9.8C9.82 10.06 10.24 10.06 10.5 9.8L14.8 5.47C14.85 5.41 14.9 5.34 14.94 5.26C14.97 5.18 14.99 5.09 14.99 5C14.99 4.82 14.92 4.66 14.8 4.52L10.5 0.2C10.25 -0.07 9.82 -0.07 9.56 0.19C9.29 0.45 9.29 0.88 9.55 1.14Z" stroke="#000000" stroke-opacity="0" stroke-width="1.000000"/>
+                          </g>
+                        </svg>
+                        
+                      </a>
+                      </div>
+                      <div class="d-flex">
+                        <a href="#" class="btn btn-primary btn-custom">
+                        <span class="me-1 fw-700">Trouver un organisme</span>
+                        <svg width="14.994141" height="10.000427" viewBox="0 0 14.9941 10.0004" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g style="mix-blend-mode:normal">
+                            <path id="Icon ionic-ios-arrow-round-forward" d="M9.56 0.19C9.29 0.45 9.29 0.88 9.55 1.14L12.72 4.32L0.67 4.32C0.3 4.32 0 4.62 0 4.99C0 5.37 0.3 5.67 0.67 5.67L12.71 5.67L9.55 8.84C9.29 9.11 9.29 9.54 9.55 9.8C9.82 10.06 10.24 10.06 10.5 9.8L14.8 5.47C14.85 5.41 14.9 5.34 14.94 5.26C14.97 5.18 14.99 5.09 14.99 5C14.99 4.82 14.92 4.66 14.8 4.52L10.5 0.2C10.25 -0.07 9.82 -0.07 9.56 0.19Z" fill="#FFFCF8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            <path id="Icon ionic-ios-arrow-round-forward" d="M9.55 1.14L12.72 4.32L0.67 4.32C0.3 4.32 0 4.62 0 4.99C0 5.37 0.3 5.67 0.67 5.67L12.71 5.67L9.55 8.84C9.29 9.11 9.29 9.54 9.55 9.8C9.82 10.06 10.24 10.06 10.5 9.8L14.8 5.47C14.85 5.41 14.9 5.34 14.94 5.26C14.97 5.18 14.99 5.09 14.99 5C14.99 4.82 14.92 4.66 14.8 4.52L10.5 0.2C10.25 -0.07 9.82 -0.07 9.56 0.19C9.29 0.45 9.29 0.88 9.55 1.14Z" stroke="#000000" stroke-opacity="0" stroke-width="1.000000"/>
+                          </g>
+                        </svg>                        
+                      </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="position-relative d-none d-lg-flex pt-5">
+                    <div class="parallax-container position-absolute contact-pos-1" data-scroll-speed="1.2" data-mouse-speed="0.01">
+                      <div class="parallax-shape">
+                        <svg width="200.747070" height="200.747437" viewBox="0 0 200.747 200.747" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g style="mix-blend-mode:normal">
+                            <path id="Tracé 419" d="M90.84 0L90.84 77.36L36.13 22.65L22.66 36.13L77.36 90.84L0 90.84L0 109.9L77.36 109.9L22.66 164.6L36.13 178.08L90.84 123.38L90.84 200.74L109.9 200.74L109.9 123.38L164.6 178.08L178.08 164.6L123.38 109.9L200.74 109.9L200.74 90.84L123.38 90.84L178.08 36.13L164.6 22.65L109.9 77.36L109.9 0L90.84 0Z" fill="#CCFFCC" fill-opacity="1.000000" fill-rule="nonzero"/>
+                          </g>
+                        </svg>                      
+                      </div>
+                    </div>
+                    <div class="parallax-container position-absolute contact-pos-2" data-scroll-speed=".6" data-mouse-speed="0.02">
+                      <div class="parallax-shape">
+                        <svg width="96.265625" height="96.265015" viewBox="0 0 96.2656 96.265" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g style="mix-blend-mode:normal">
+                            <path id="Tracé 418" d="M0 96.26C53.16 96.26 96.26 53.16 96.26 0C43.09 0 0 43.09 0 96.26Z" fill="#54CDFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="parallax-container position-absolute contact-pos-3" data-scroll-speed="1.3" data-mouse-speed="0.05">
+                      <div class="parallax-shape">
+                        <svg width="83.874023" height="87.592896" viewBox="0 0 83.874 87.5929" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <g style="mix-blend-mode:normal">
+                            <path id="Tracé 371" d="M12.9 16.62C-5.67 37.25 -4 69.02 16.62 87.59L39.26 62.44C32.52 56.38 31.98 46 38.05 39.26C44.11 32.52 54.49 31.98 61.23 38.05L83.87 12.9C63.25 -5.67 31.47 -4 12.9 16.62Z" fill="#FFCB5C" fill-opacity="1.000000" fill-rule="nonzero"/>
+                          </g>
+                        </svg>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-6">
+              <div class="contact-left-box contact-right-box">
+                <h3 class="mb-3 fw-700">Vous êtes un organisme ?</h3>
+                <div class="mb-4">
+                  <p>Vous souhaitez en savoir plus sur les modalités pour devenir membre ? Nous sommes là pour vous accompagner ! </p>
+                </div>
+                <h4 class="mb-2 fw-700">Remplissez les champs ci-dessous pour nous transmettre votre message</h4>
+                <div class="d-flex flex-row gap-2 align-items-center mb-4"><i class="fas fa-envelope"></i><span class=""><a href="mailto:pirouettecabriole@fqccl.org" class="text-link text-decoration-none">pirouettecabriole@fqccl.org</a></span></div>
+                <h5 class="mb-3 fw-700">Formulaire de contact</h5>
+                <form action="" method="">
+                  <div class="mb-2">
+                    <h6 class="mb-2 fw-700">Coordonnées</h6>
+                    <div class="row">
+                      <div class="col-12 col-lg-6">
+                        <div class="mb-3">
+                          <label for="firstname" class="form-label">Prénom</label>
+                          <input type="text" class="form-control" id="firstname" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <div class="mb-3">
+                          <label for="lastname" class="form-label">Nom</label>
+                          <input type="text" class="form-control" id="lastname" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-12">
+                        <div class="mb-3">
+                          <label for="org-name" class="form-label">Nom de votre organisme</label>
+                          <input type="text" class="form-control" id="org-name" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-12">
+                        <div class="mb-3">
+                          <label for="courriel2" class="form-label">Courriel</label>
+                          <input type="email" class="form-control" id="courriel2" placeholder="">
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-12">
+                        <div class="mb-3">
+                          <label for="message" class="form-label">Votre message</label>
+                          <textarea name="messagebox" class="form-control" id="message" placeholder="" rows="1"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-0"><button type="submit" class="btn btn-secondary btn-tertiary">Envoyer ma demande</button></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer text-center text-sm-start">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-xl-5">
+              <div class="row">
+                <div class="col-12 col-sm-4"><span class="mb-3 mb-xl-0"><img class="img-fluid f-logo" src="images/logo-footer.svg" alt="Pirouette et Cabriole"></span></div>
+                <div class="col-12 col-sm-4"><span class="fs-xxs fw-700 mb-2 d-flex justify-content-center justify-content-sm-start">Un programme de la</span><img class="img-fluid" src="images/fqdccl.svg" alt=""></div>
+                <div class="col-12 col-sm-4"><span class="fs-xxs fw-700 mb-2 d-flex justify-content-center justify-content-sm-start">Avec la participation de</span><img class="img-fluid" src="images/quebec.svg" alt=""></div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-7">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-6">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <ul class="unordered-list nav d-flex flex-column">
+                        <li><a class="nav-link text-link" href="#">À propos</a></li>
+                        <li><a class="nav-link text-link" href="#">Nous trouver</a></li>
+                        <li><a class="nav-link text-link" href="#">Activités à la maison</a></li>
+                        <li><a class="nav-link text-link" href="#">Blogue et ressources</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <ul class="unordered-list nav d-flex flex-column">
+                        <li><a class="nav-link text-link" href="#">Devenir membre</a></li>
+                        <li><a class="nav-link text-link" href="#">FAQ</a></li>
+                        <li><a class="nav-link text-link" href="#">Contact</a></li>
+                      </ul>
+                    </div>
+        
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6">
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <ul class="unordered-list nav d-flex flex-column align-items-center align-items-sm-start">
+                        <li><a class="nav-link d-flex flex-row align-items-center" href="#"><i class="fas fa-phone"></i><span class="ms-2">418 686-0012</span></a></li>
+                        <li><a class="nav-link d-flex flex-row align-items-center" href="#"><i class="fas fa-envelope"></i><span class="ms-2">pirouettecabriole@fqccl.org</span></a></li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6">
+                      <div class="d-flex flex-column flex-lg-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start">
+                        <ul class="unordered-list nav p-0 ps-lg-5 gap-3">
+                          <li><a class="nav-link d-flex flex-row align-items-center fs-base" href="#"><i class="fab fa-facebook"></i></a></li>
+                          <li><a class="nav-link d-flex flex-row align-items-center fs-base" href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>  
+                      </div>
+                    </div>
+        
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-btm">
+        <div class="container">
+          <p><span class="fs-xxs">Le jardin de Pirouette et Cabriole | © 2025 Tous droits réservés</span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <!-- GSAP Core + ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js" integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

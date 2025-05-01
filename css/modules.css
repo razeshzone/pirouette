@@ -14,17 +14,22 @@
   position: relative;
   will-change: transform;
   pointer-events: none;
-  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1));
+  /* filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.1)); */
   transform-origin: center center;
   transform-style: preserve-3d;
 }
 
 /* parallax css ends */
-
+.page-title-block{
+  background: var(--color-green);
+  padding-bottom: 20px;
+}
 .contact-wrapper{
   background: var(--color-yellow);
   padding-top: var(--space-section-lg);
-  padding-bottom: calc(var(--space-section-lg) + var(--space-section-lg));
+  padding-bottom: calc(var(--space-section-lg) * 2.25);
+  position: relative;
+  clip-path: polygon(0 40px, 100% 0, 100% 100%, 0 calc(100% - 40px));
 }
 .contact-wrapper h4{
   font-size: var(--fs-lg);
@@ -91,16 +96,210 @@
 .feature-box ul li img{
   margin-top: 5px;
 }
+.contact-left-box{
+  border-radius: var(--space-sm);
+  border: solid 1px var(--color-light-blue);
+  padding-top: clamp(20px, 3.2px + 4vw, 45px);
+  padding-left: clamp(20px, 3.2px + 4vw, 33px);
+  padding-right: clamp(20px, 3.2px + 4vw, 45px);
+  padding-bottom: clamp(20px, 3.2px + 4vw, 33px);
+}
+.contact-right-box{
+  border-color: var(--color-lightest-green);
+}
 
+.btn-custom{
+  background: var(--color-green);
+  border-color: var(--color-green);
+}
+.btn-custom:hover, 
+.btn-custom:focus, 
+.btn-custom:active, 
+.btn-custom.active{
+  border-color: var(--color-green);
+  background-color: transparent;
+  color: var(--color-green);
+}
+.btn-custom:hover svg path,
+.btn-custom:focus svg path,
+.btn-custom:active svg path,
+.btn-custom.active svg path{
+  fill: var(--color-green);
+}
+.contact-left-box h3{
+  color: var(--color-light-blue);
+}
+.contact-right-box h3{
+  color: var(--color-lightest-green);
+}
+.contact-left-box p a{
+  text-decoration: none;
+  color: var(--color-light-blue);
+}
+.contact-pos-1{
+  top: 350px;
+  left: 0;
+}
+.contact-pos-2{
+  top: 100px;
+  left: auto;
+  right: clamp(80px, 3.2px + 4vw, 168px);
+}
+.contact-pos-3{
+  top: 320px;
+  left: auto;
+  right: clamp(100px, 3.2px + 4vw, 212px);
+}
+.faq-section .nav-tabs{
+  border-bottom: transparent;
+}
+.faq-section .nav-tabs .nav-item .nav-link.btn-blue, 
+.faq-section .nav-tabs .nav-link.btn-blue{
+  color: var(--color-light-blue);
+  border: solid 1px var(--color-light-blue);
+  background-color: transparent;
+  width: 100%;
+}
+.faq-section .nav-tabs .nav-item.show .nav-link.btn-blue, 
+.faq-section .nav-tabs .nav-link.btn-blue.active{
+  color: rgba(var(--white-rgb), 1);
+  border: solid 1px var(--color-light-blue);
+  background-color: var(--color-primary);
+}
+.faq-section .nav-tabs .nav-item .nav-link.btn-green, 
+.faq-section .nav-tabs .nav-link.btn-green{
+  color: var(--color-lightest-green);
+  border: solid 1px var(--color-lightest-green);
+  background-color: transparent;
+  width: 100%;
+}
+.faq-section .nav-tabs .nav-item.show .nav-link.btn-green, 
+.faq-section .nav-tabs .btn-green.nav-link.active{
+  color: rgba(var(--white-rgb), 1);
+  border: solid 1px var(--color-lightest-green);
+  background-color: var(--color-lightest-green);
+}
+.faq-section .nav-tabs{
+  width: 100%;
+  padding: 0;
+}
+.faq-section .nav-tabs li{
+  width: calc(50% - 20px);
+  margin-right: 20px;
+}
+.faq-section .nav-tabs li:last-child{
+  margin-right: 0;
+}
+.faq-section .nav-tabs li a{
+  display: block;
+  width: 100%;
+}
+.faq-section .accordion-button::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url('data:image/svg+xml,<svg width="16.773438" height="16.773438" viewBox="0 0 16.7734 16.7734" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect id="plus" width="16.773438" height="16.773438" fill="%23FFFFFF" fill-opacity="0"/><g style="mix-blend-mode:normal"><path id="Tracé 104" d="" fill="%23000000" fill-opacity="0" fill-rule="nonzero"/><path id="Tracé 104" d="M16.77 8.38L0 8.38" stroke="%23005175" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linejoin="round"/></g><g style="mix-blend-mode:normal"><path id="Tracé 105" d="" fill="%23000000" fill-opacity="0" fill-rule="nonzero"/><path id="Tracé 105" d="M8.38 16.77L8.38 0" stroke="%23005175" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linejoin="round"/></g></svg>');
+  transform: none;
+}
+.faq-section .accordion-button:not(.collapsed)::after {
+  content: "";
+  background: url('data:image/svg+xml,<svg width="16.773438" height="16.773438" viewBox="0 0 16.7734 16.7734" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><rect id="minus" width="16.773438" height="16.773438" fill="%23FFFFFF" fill-opacity="0"/><g style="mix-blend-mode:normal"><path id="Tracé 104" d="" fill="%23000000" fill-opacity="0" fill-rule="nonzero"/><path id="Tracé 104" d="M16.77 8.38L0 8.38" stroke="%23005175" stroke-opacity="1.000000" stroke-width="3.000000" stroke-linejoin="round"/></g></svg>');
+}
+.faq-section .accordion{
+  border-radius: 20px;
+}
+.faq-section .accordion-item,
+.faq-section .accordion-item:first-of-type,
+.faq-section .accordion-item:last-of-type{
+  border: solid 1px var(--color-light-blue);
+  margin-bottom: 15px;
+  border-radius: 15px;
+  background: rgba(102,162,252,.15);
+  overflow: hidden;
+}
+.faq-section .bg-blue-300 .accordion-item{
+  border: solid 1px var(--color-light-blue);
+  background: rgba(102,162,252,.15);
+}
+.faq-section .bg-green-300 .accordion-item{
+  border: solid 1px var(--color-lightest-green);
+  background: rgba(86,213,115,.15);
+}
+.faq-section .accordion-button,
+.faq-section .accordion-button:not(.collapsed){
+  background: rgba(102,162,252,.15);
+  border-radius: 15px;
+  font-weight: var(--fw-700);
+  color: var(--color-primary);
+  font-size: var(--fs-md);
+}
+.faq-section .bg-blue-300 .accordion-button{
+  background: rgba(102,162,252,.15);
+}
+.faq-section .bg-green-300 .accordion-button{
+  background: rgba(86,213,115,.15);
+}
+.faq-section .accordion-item:first-of-type>.accordion-header .accordion-button,
+.faq-section .accordion-button:not(.collapsed){
+  border-radius: 15px 15px 0 0;
+}
+.faq-section .accordion-button:focus{
+  outline: none;
+  box-shadow: none;
+}
+.faq-section .accordion-body{
+  color: var(--color-primary);
+}
+.faq-tab-shape-pos-1{
+  top: 10%;
+  left: 0;
+}
+.faq-tab-shape-pos-2{
+  top: 30%;
+  left: 2%;
+}
+.faq-tab-shape-pos-3{
+  top: 70%;
+  left: -10%;
+}
+.faq-tab-shape-pos-4{
+  top: 23%;
+  left: auto;
+  right: -8%;
+}
+.faq-tab-shape-pos-5{
+  top: 43%;
+  left: auto;
+  right: 2%;
+}
+.faq-tab-shape-pos-6{
+  top: 82%;
+  left: auto;
+  right: 1%;
+}
+/* media queries starts */
 @media(min-width:320px){
   .main-content{
     overflow-x: hidden;
+    overflow: hidden;
   }
   .top-shape-pos-1,
   .top-shape-pos-2,
   .top-shape-pos-3,
   .top-shape-pos-4{
     display: none;
+  }
+  .faq-section .nav-tabs li {
+    width: calc(100% - 0px);
+    margin-right: 0px;
+  }
+  .faq-tab-shape-pos-1 svg,
+  .faq-tab-shape-pos-2 svg,
+  .faq-tab-shape-pos-3 svg,
+  .faq-tab-shape-pos-4 svg,
+  .faq-tab-shape-pos-5 svg,
+  .faq-tab-shape-pos-6 svg{
+    opacity: 0.3;
   }
 }
 @media(min-width:992px){
@@ -125,6 +324,15 @@
     max-width: 100%;
     width: clamp(80px, 10vh + 5%, 120px);
   }
+  .faq-shape-pos-3{
+    top: -15px;
+    left: auto;
+    right: 168px;
+  }
+  .faq-shape-pos-4{
+    top: 90%;
+    left: 15%;
+  }
   .top-shape-pos-3{
     left: 48%;
     top: 100%;
@@ -134,5 +342,18 @@
     left: 95%;
     top: 1%;
     z-index: -1;
+  }
+  .faq-section .nav-tabs li {
+    width: calc(50% - 20px);
+    margin-right: 20px;
+  }
+  .faq-tab-shape-pos-1 svg,
+  .faq-tab-shape-pos-2 svg,
+  .faq-tab-shape-pos-3 svg,
+  .faq-tab-shape-pos-4 svg,
+  .faq-tab-shape-pos-5 svg,
+  .faq-tab-shape-pos-6 svg{
+    transform: scale(.8);
+    opacity: 1;
   }
 }

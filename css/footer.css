@@ -48,7 +48,7 @@
 }
 .view-faq-box{
   position: relative;
-  top: calc(-1 * var(--space-section-lg));
+  top: calc(-1 * var(--space-section-xl));
   background: var(--color-green);
 }
 .faq-shape-pos-1{
@@ -69,6 +69,9 @@
   max-width: 100%;
   width: clamp(80px, 10vh + 5%, 120px);
 }
+.footer a:hover>i.fab{
+  color: var(--color-light-blue);
+}
 @media(min-width:320px){
   .faq-shape-pos-1{
     left: auto;
@@ -86,8 +89,8 @@
 }
 @media(min-width:992px){
   .faq-shape-pos-1{
-    bottom: 45px;
-    right: 120px;
+    top:110%;
+    right: 5%;  
   }
   .faq-shape-pos-2{
     bottom:-20px;

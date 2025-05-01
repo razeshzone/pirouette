@@ -18,13 +18,13 @@ header.header{
 .header .navbar-nav .nav-link:hover,
 .header .navbar-nav .nav-link.active, 
 .header .navbar-nav .nav-link.show{
-  color: var(--color-green-light);
+  color: var(--color-light-green);
 }
 .logo{
   width: clamp(200px, 3.2px + 4vw, 335px);
 }
 .slogan{
-  font-size: var(--fs-lg);
+  font-size: var(--fs-xl);
 }
 .navbar-toggler {
   position: absolute;
@@ -191,7 +191,7 @@ header.header{
   left: 50%;
   width: 20px;
   height: 20px;
-  background-color: var(--color-green-light);
+  background-color: var(--color-light-green);
   border-radius: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.5s ease, opacity 0.5s ease;
