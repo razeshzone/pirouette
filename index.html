@@ -27,6 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -128,10 +129,10 @@
       </nav>  
     </header>
     <main class="main-content">
-      <section class="hero-banner">
+      <section class="hero-banner section">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-xl-6">
               <div class="hero-player">
                 <video class="video" controls crossorigin playsinline
                   poster="images/video/PirouetteetCabriole.webp">
@@ -144,7 +145,7 @@
               </div>
               <!-- plyr video ends -->
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-xl-6">
               <div class="banner-title d-flex flex-column flex-md-row gap-3 align-items-baseline">
                 <h3 class="fw-400 text-white">Le jardin <br>
                   Pirouette et <br>
@@ -207,14 +208,15 @@
                   Des ateliers animés par des équipes spécialement formées sont proposés partout au Québec. Les ateliers abordent des thématiques variées et proposent des activités, à l’intérieur comme à l’extérieur, adaptées à toutes les saisons.
                   Chaque enfant participe avec un adulte de son entourage (parent, grand-parent), qui reçoit des conseils et des outils pour favoriser l’apprentissage au quotidien.
                   Envie d’offrir à votre enfant les meilleures chances de bien grandir, de prendre confiance, tout en développant des habiletés nécessaires pour l’école ?</p>
+                  <div class="d-flex justify-content-start mt-3"><a href="#" class="btn btn-primary border-green bg-light-green fw-700"><span class="me-1">EN SAVOIR PLUS SUR LE PROGRAMME</span><i class="fas fa-arrow-right"></i></a></div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="featured-section content-section py-5">
+      <section class="featured-section interactive-map-area content-section py-5 section">
         <div class="container">
-          <h3 class="mb-4">Les avantages du programme pour votre enfant </h3>
+          <h3 class="mb-4 fw-700">Les avantages du programme pour votre enfant </h3>
           <div class="row g-4 justify-content-center position-relative">
             <div class="col-12 col-lg-6 col-xl-3">
               <div class="feature-box quick-info-box matchHeight p-2 mb-2">
@@ -385,69 +387,934 @@
               </div>
             </div>
           </div>
-          <div class="row g-4 justify-content-center position-relative">
-            <div class="col-12 col-lg-3">
-              <h3>Qui peut devenir membre ?</h3>
+          <div class="d-flex flex-column position-relative">
+            <div class="mb-5 position-relative">
+              <h3 class=" fw-700">Trouver un atelier près de chez vous !</h3>
+              <div class="parallax-container top-shape-pos-1" style="left: -2%; top: 7%;" data-scroll-speed="1.2" data-mouse-speed="0.01">
+                <div class="parallax-shape">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="107.624" height="107.624" viewBox="13.376 1442.773 107.624 107.624"><g data-name="Groupe 113"><g data-name="Groupe 108" transform="translate(13.376 1442.773)" clip-path="url(#a)"><path d="M101.083 47.271H69.604l22.26-22.26a6.541 6.541 0 0 0-9.252-9.25l-22.259 22.26V6.54a6.541 6.541 0 0 0-13.082 0v31.48l-22.26-22.26a6.541 6.541 0 0 0-9.25 9.25l22.26 22.26H6.54a6.541 6.541 0 1 0 0 13.082h31.48l-22.26 22.26a6.541 6.541 0 1 0 9.25 9.25l22.26-22.259v31.48a6.541 6.541 0 0 0 13.082 0v-31.48l22.26 22.26a6.541 6.541 0 0 0 9.25-9.252L69.604 60.353h31.48a6.541 6.541 0 0 0 0-13.082" fill="#dee9ef" fill-rule="evenodd" data-name="Tracé 168"/></g></g><defs><clipPath id="a"><path d="M0 0h107.624v107.624H0V0z" data-name="Rectangle 106"/></clipPath></defs></svg>                                   
+                </div>
+              </div>
             </div>
-            <div class="col-12 col-lg-9">
-              <div class="mb-3 mb-lg-4">
-                <p>Le programme est accessible aux organisations souhaitant promouvoir le développement psychomoteur des jeunes enfants. Parmi les organisations :</p>
+            <div class="row">
+              <div class="col-12 col-xl-6">
+                <div class="d-flex flex-column justify-content-between">
+                  <!-- Nav Tabs -->
+                  <ul class="nav nav-tabs d-flex gap-3 flex-column flex-lg-row" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link btn-blue active rounded-5 fw-700 px-3 py-1" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab">
+                        CHERCHER PAR CODE POSTAL
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link btn-blue rounded-5 fw-700 px-3 py-1" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab">
+                        CHERCHER PAR RÉGION
+                      </button>
+                    </li>
+                  </ul>                
+                </div>
+                <div class="row mt-3">
+                  <div class="col-12">
+                      <!-- Tab Content -->
+                      <div class="tab-content position-relative z-1 mt-3" id="myTabContent">
+                        <!-- Tab 1 -->
+                        <div class="tab-pane bg-blue-300 fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                          <div class="box-content" id="accordionTab1">
+                            <form action="#">
+                              <div class="d-flex flex-column flex-lg-row align-items-lg-end mb-5 mb-lg-0">
+                                <div class="mb-3 mb-lg-0 me-0 me-lg-3">
+                                  <label for="input1" class="form-label">CODE POSTAL</label>
+                                  <input type="text" class="form-control" id="input1" placeholder="">
+                                </div>
+                                <button class="btn btn-secondary border-light-blue color-light-blue" type="submit">Rechercher</button>
+                              </div>
+                            </form>
+                            <div class="position-relative h-100 d-flex">
+                              <div class="parallax-container top-shape-pos-1" style="left: 45%; top:300px;" data-scroll-speed="1.2" data-mouse-speed="0.02">
+                                <div class="parallax-shape">
+                                  <svg width="119.219482" height="119.219604" viewBox="0 0 119.219 119.22" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <mask id="mask1_96" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="119.219482" height="119.219604">
+                                      <g style="mix-blend-mode:normal">
+                                        <rect id="Rectangle 101" width="119.219482" height="119.219482" fill="#66A2FC" fill-opacity="1.000000"/>
+                                      </g>
+                                    </mask>
+                                    <g mask="url(#mask1_96)">
+                                      <g style="mix-blend-mode:normal">
+                                        <path id="Tracé 132" d="M0 59.6C31.39 63.02 56.18 87.82 59.6 119.21C63.02 87.82 87.82 63.02 119.21 59.6C87.82 56.19 63.02 31.39 59.6 0C56.18 31.39 31.39 56.19 0 59.6Z" fill="#66A2FC" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                      </g>
+                                    </g>
+                                  </svg>                                                                   
+                                </div>
+                              </div>
+                              <div class="parallax-container top-shape-pos-1" style="left: 0%; top: 450px;" data-scroll-speed="1.3" data-mouse-speed="0.04">
+                                <div class="parallax-shape">
+                                  <svg width="176.846191" height="176.846191" viewBox="0 0 176.846 176.846" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <mask id="mask1_91" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="176.846191" height="176.846191">
+                                      <g style="mix-blend-mode:normal">
+                                        <rect id="Rectangle 100" y="54.480713" width="133.945770" height="133.945770" transform="rotate(-24 0.000000 54.480713)" fill="#005175" fill-opacity="1.000000"/>
+                                      </g>
+                                    </mask>
+                                    <g mask="url(#mask1_91)">
+                                      <g style="mix-blend-mode:normal">
+                                        <path id="Tracé 131" d="M63.79 128.2C71.75 124.66 78.48 112.71 82.89 102.83C79.55 113.12 76.56 126.51 80.1 134.46C86.45 148.74 102.37 155.52 115.66 149.6C128.94 143.69 134.56 127.32 128.2 113.05C124.66 105.09 112.71 98.36 102.83 93.95C113.12 97.29 126.51 100.28 134.46 96.74C148.74 90.38 155.52 74.46 149.6 61.18C143.69 47.89 127.32 42.28 113.05 48.63C105.09 52.17 98.36 64.12 93.95 74.01C97.29 63.71 100.28 50.33 96.74 42.37C90.38 28.1 74.46 21.32 61.18 27.24C47.89 33.15 42.28 49.52 48.63 63.79C52.17 71.75 64.12 78.48 74.01 82.89C63.71 79.55 50.33 76.56 42.37 80.1C28.1 86.45 21.32 102.37 27.24 115.66C33.15 128.94 49.52 134.56 63.79 128.2Z" fill="#005175" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                      </g>
+                                    </g>
+                                  </svg>                                                                                                 
+                                </div>
+                              </div>
+                              <div class="parallax-container top-shape-pos-1" style="left: auto; right:-50px; top: 420px;" data-scroll-speed="1.0" data-mouse-speed="0.01">
+                                <div class="parallax-shape">
+                                  <svg width="119.464844" height="109.592529" viewBox="0 0 119.465 109.593" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g style="mix-blend-mode:normal">
+                                      <path id="Tracé 130" d="M45.96 95.83L31.35 70.53C23.45 56.84 28.16 39.26 41.85 31.35C55.55 23.45 73.12 28.16 81.03 41.85L95.64 67.15L119.46 53.4L104.85 28.1C89.34 1.22 54.97 -7.98 28.1 7.53C1.22 23.05 -7.98 57.41 7.53 84.29L22.14 109.59L45.96 95.83Z" fill="#F55057" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                    </g>
+                                  </svg>                                                                                                
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>      
+                        <!-- Tab 2 -->
+                        <div class="tab-pane bg-green-300 fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                          <div class="accordion" id="accordionTab2">
+                            <div class="overflow-y-auto h-custom">
+                              <div class="mb-2">
+                                <!-- Item 1 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1"> ABITIBI-TÉMISCAMINGUE <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse1">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 2 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2"> BAS SAINT-LAURENT <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse2">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 3 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3"> CAPITALE-NATIONALE <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse3">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 4 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4"> CENTRE-DU-QUÉBEC <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse4">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 5 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5"> CHAUDIÈRE-APPALACHES <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse5">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 6 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6"> CÔTE-NORD <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse6">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 7 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7"> ESTRIE <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse7">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 8 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8"> GASPÉSIE–ÎLES-DE-LA-MADELAINE <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse8">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 9 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9"> LANAUDIÈRE <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse9">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 10 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10"> LAURENTIDES <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse10">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 11 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11"> LAVAL <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse11">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 12 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12"> MAURICIE <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse12">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 13 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13"> MONTÉRÉGIE <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse13">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 14 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14"> MONTRÉAL <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse14">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 15 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15"> OUTAOUAIS <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse15">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="mb-2">
+                                <!-- Item 16 -->
+                                <button class="collapsible-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16"> SAGUENAY–LAC-SAINT-JEAN <i class="fas fa-plus"></i>
+                                </button>
+                                <div class="collapse" id="collapse16">
+                                  <div class="card card-body">
+                                    <div class="fs-base fw-600 mb-1">Nom de l’organisme</div>
+                                    <div class="fw-400 fs-base mb-1">123, rue Fictive</div>
+                                    <div class="fw-400 fs-base mb-1">Ville (Qc) X0X 0X0</div>
+                                    <div class="fw-400 fs-base mb-1">000-000-0000</div>
+                                    <div class="fw-400 fs-base mt-1">
+                                      <a href="#" class="text-decoration-none color-blue">www.siteweb.com <i class="fas fa-arrow-right"></i></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>  
+                          </div>
+                        </div>
+                      </div>              
+                  </div>
+                </div>      
               </div>
-              <div class="mb-3 mb-lg-0">
-                <ul class="nav d-flex flex-column gap-3">
-                  <li class="d-flex flex-row gap-2 align-items-start">
-                    <div class="d-flex"><img src="images/asterik.svg" alt="" width="16"></div>
-                    <div class="span fw-700">Les centres communautaires de loisir</div>
-                  </li>
-                  <li class="d-flex flex-row gap-2 align-items-start">
-                    <div class="d-flex"><img src="images/asterik.svg" alt="" width="16"></div>
-                    <div class="span fw-700">Les organismes à but non lucratif - OBNL</div>
-                  </li>
-                  <li class="d-flex flex-row gap-2 align-items-start">
-                    <div class="d-flex"><img src="images/asterik.svg" alt="" width="16"></div>
-                    <div class="span fw-700">Les organismes communautaires</div>
-                  </li>
-                  <li class="d-flex flex-row gap-2 align-items-start">
-                    <div class="d-flex"><img src="images/asterik.svg" alt="" width="16"></div>
-                    <div class="span fw-700">Les municipalités et services de loisirs</div>
-                  </li>
-                </ul>
-              </div>
+              <div class="col-12 col-xl-6">
+                <div class="interactive-map">
+                  <div style="width: 100%"><iframe id="map" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/collections/personal-trackers/">gps trackers</a></iframe></div>
+                </div>
+              </div>  
             </div>
           </div>
         </div>
       </section>
-    </main>
-    <footer class="footer text-center text-sm-start">
-      <div class="pre-footer text-center">
+      <section class="content-section experience-share-section position-relative section">
         <div class="container">
-          <div class="view-faq-box px-3 px-lg-5 py-5 rounded-4 content-section">
-            <h2 class="mb-3 mb-lg-4 fw-500">Besoin d’informations complémentaires ?</h2>
-            <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary px-3 py-2"><span class="fw-700 me-2">CONSULTER LA FAQ</span><i class="fas fa-arrow-right"></i></a></div>
-            <div class="parallax-container faq-shape-pos-1" data-scroll-speed="1.2" data-mouse-speed="0.01">
-              <div class="parallax-shape">
-                <svg width="40.619141" height="37.784180" viewBox="0 0 40.6191 37.7842" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">               
-                  <g style="mix-blend-mode:normal">
-                    <path id="Tracé 361" d="M32.4 32.4C42.13 24.23 43.4 9.73 35.23 0L23.37 9.95C26.04 13.13 25.62 17.87 22.44 20.53C19.26 23.2 14.53 22.79 11.86 19.61L0 29.56C8.16 39.29 22.67 40.56 32.4 32.4Z" fill="#FFCB5C" fill-opacity="1.000000" fill-rule="nonzero"/>
-                  </g>
-                </svg>            
+          <div class="experience-share-title mb-3">
+            <h2 class="fw-400">Une expérience <br>à partager !</h2>
+          </div>
+          <div class="experience-share swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="container-in position-relative">
+                  <div class="container-block">
+                    <div class="parallax-container top-shape-pos-1" style="left:-25%; top: 85%; z-index: 1;" data-scroll-speed="1.2" data-mouse-speed="0.02">
+                      <div class="parallax-shape">
+                        <svg width="119.536377" height="119.536133" viewBox="0 0 119.536 119.536" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                          <rect id="Groupe 57" width="119.536377" height="119.536377" fill="#FFFFFF" fill-opacity="0"/>
+                          <mask id="mask1_3778" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="119.536377" height="119.536133">
+                            <g style="mix-blend-mode:normal">
+                              <rect id="Rectangle 91" width="119.536377" height="119.536377" fill="#F55057" fill-opacity="1.000000"/>
+                            </g>
+                          </mask>
+                          <g mask="url(#mask1_3778)">
+                            <g style="mix-blend-mode:normal">
+                              <path id="Tracé 110" d="M79.66 59.76C153.56 111.56 111.56 153.56 59.76 79.66C7.96 153.56 -34.03 111.56 39.87 59.76C-34.03 7.96 7.96 -34.03 59.76 39.87C111.56 -34.03 153.56 7.96 79.66 59.76Z" fill="#F55057" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </g>
+                          </g>
+                        </svg>                                                                                                             
+                      </div>
+                    </div>
+                    <div class="row align-items-baseline">
+                      <div class="col-12 col-lg-6 position-relative">
+                        <div class="img-custom mb-3 mb-lg-0"><img srcset="images/experience-slides/bearded-smiling-fath@2x.webp 2x, images/experience-slides/bearded-smiling-fath.webp 1x" src="images/experience-slides/bearded-smiling-fath.webp" alt="" class="img-fluid"></div>
+                        <div class="parallax-container top-shape-pos-1" style="left: auto; right: -25px; top: 200px; z-index: 1;" data-scroll-speed="1.0" data-mouse-speed="0.02">
+                          <div class="parallax-shape">
+                            <svg width="146.064331" height="146.064453" viewBox="0 0 146.064 146.064" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect id="Groupe 55" width="146.064331" height="146.064331" fill="#FFFFFF" fill-opacity="0"/>
+                              <mask id="mask1_3775" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="146.064331" height="146.064453">
+                                <g style="mix-blend-mode:normal">
+                                  <rect id="Rectangle 90" width="146.064331" height="146.064331" fill="#FFFCF8" fill-opacity="1.000000"/>
+                                </g>
+                              </mask>
+                              <g mask="url(#mask1_3775)">
+                                <g style="mix-blend-mode:normal">
+                                  <path id="Tracé 109" d="M146.06 73.03C97.37 86.47 86.47 97.37 73.03 146.06C59.58 97.37 48.68 86.47 0 73.03C48.68 59.58 59.58 48.68 73.03 0C86.47 48.68 97.37 59.58 146.06 73.03Z" fill="#FFFCF8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </g>
+                              </g>
+                            </svg>                                                                                      
+                          </div>
+                        </div>
+                        <div class="parallax-container top-shape-pos-1" style="left: auto; right: -80px; top: 120px; z-index: 1;" data-scroll-speed="1.2" data-mouse-speed="0.05">
+                          <div class="parallax-shape">
+                            <svg width="82.615356" height="82.463379" viewBox="0 0 82.6154 82.4634" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect id="Groupe 53" width="82.615326" height="82.463196" fill="#FFFFFF" fill-opacity="0"/>
+                              <mask id="mask1_3772" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="82.615295" height="82.463379">
+                                <g style="mix-blend-mode:normal">
+                                  <rect id="Rectangle 89" width="82.615318" height="82.463196" fill="#FFCB5C" fill-opacity="1.000000"/>
+                                </g>
+                              </mask>
+                              <g mask="url(#mask1_3772)">
+                                <g style="mix-blend-mode:normal">
+                                  <path id="Tracé 108" d="M43.77 2.39C43.86 5.2 47.83 5.7 48.61 3C49.5 -0.07 54.09 1.11 53.39 4.23C52.78 6.97 56.49 8.44 57.92 6.02C59.55 3.27 63.7 5.56 62.25 8.4C60.97 10.9 64.21 13.25 66.2 11.27C68.45 9.01 71.9 12.25 69.79 14.64C67.93 16.75 70.48 19.83 72.9 18.4C75.65 16.78 78.19 20.78 75.55 22.57C73.22 24.15 74.92 27.77 77.62 26.98C80.69 26.09 82.15 30.6 79.15 31.68C76.5 32.63 77.25 36.56 80.06 36.47C83.25 36.37 83.55 41.09 80.37 41.39C77.57 41.66 77.32 45.65 80.07 46.26C83.18 46.96 82.29 51.61 79.14 51.11C76.36 50.67 75.13 54.47 77.63 55.75C80.48 57.2 78.46 61.48 75.53 60.21C72.95 59.1 70.81 62.47 72.92 64.33C75.31 66.44 72.29 70.09 69.77 68.13C67.55 66.41 64.64 69.15 66.22 71.47C68.01 74.11 64.18 76.9 62.23 74.37C60.5 72.15 57 74.08 57.95 76.72C59.03 79.73 54.63 81.47 53.36 78.54C52.25 75.96 48.37 76.95 48.64 79.75C48.94 82.93 44.24 83.52 43.74 80.37C43.3 77.6 39.3 77.6 38.86 80.37C38.37 83.52 33.67 82.93 33.97 79.75C34.23 76.96 30.36 75.96 29.24 78.54C27.98 81.47 23.57 79.73 24.65 76.72C25.61 74.08 22.1 72.15 20.38 74.37C18.42 76.9 14.59 74.11 16.39 71.47C17.97 69.15 15.05 66.41 12.83 68.13C10.31 70.09 7.29 66.44 9.69 64.33C11.8 62.47 9.65 59.1 7.07 60.21C4.14 61.48 2.13 57.2 4.97 55.75C7.48 54.47 6.24 50.67 3.46 51.11C0.31 51.61 -0.58 46.96 2.54 46.26C5.28 45.65 5.03 41.66 2.23 41.39C-0.94 41.09 -0.65 36.37 2.54 36.47C5.35 36.56 6.1 32.63 3.46 31.68C0.45 30.6 1.92 26.09 4.98 26.98C7.68 27.77 9.38 24.15 7.06 22.57C4.42 20.78 6.96 16.78 9.7 18.4C12.12 19.83 14.67 16.75 12.81 14.64C10.7 12.25 14.15 9.01 16.41 11.27C18.4 13.25 21.63 10.9 20.36 8.4C18.91 5.56 23.06 3.27 24.68 6.02C26.11 8.44 29.83 6.97 29.22 4.23C28.52 1.11 33.11 -0.07 34 3C34.78 5.7 38.75 5.2 38.83 2.39C38.93 -0.8 43.67 -0.8 43.77 2.39Z" fill="#FFCB5C" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </g>
+                              </g>
+                            </svg>
+                                                                                                                 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <div class="mb-5">
+                          <p>« Le jardin de Pirouette et Cabriole me permet de vivre des moments privilégiés avec mon enfant. Chaque séance stimule sa coordination, son équilibre et sa mémoire. Je vois ses progrès chaque semaine : il gagne en confiance et en autonomie. »</p>
+                          <div><span class="fw-700">– Simon, </span><span class="fw-400">papa de William, 3 ans.</span></div>
+                        </div>
+                      </div>
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="container-in position-relative">
+                  <div class="container-block">
+                    <div class="row flex-row-reverse align-items-baseline">
+                      <div class="col-12 col-lg-6">
+                        <div class="img-custom img-top-border">
+                          <img srcset="images/experience-slides/bearded-smiling-fath@2x.webp 2x, images/experience-slides/bearded-smiling-fath.webp 1x" src="images/experience-slides/bearded-smiling-fath.webp" alt="" class="img-fluid">
+                        </div>
+                        <div class="parallax-container top-shape-pos-1" style="left: auto; right: -25px; top: 150px; z-index: 1;" data-scroll-speed="1.2" data-mouse-speed="0.05">
+                          <div class="parallax-shape">
+                            <svg width="98.447876" height="98.447754" viewBox="0 0 98.4479 98.4478" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <g style="mix-blend-mode:normal">
+                                <path id="Tracé 115" d="M44.55 0L44.55 37.94L17.72 11.11L11.11 17.72L37.94 44.55L0 44.55L0 53.89L37.94 53.89L11.11 80.72L17.72 87.33L44.55 60.5L44.55 98.44L53.89 98.44L53.89 60.5L80.72 87.33L87.33 80.72L60.5 53.89L98.44 53.89L98.44 44.55L60.5 44.55L87.33 17.72L80.72 11.11L53.89 37.94L53.89 0L44.55 0Z" fill="#FFFCF8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                              </g>
+                            </svg>                                                           
+                          </div>
+                        </div>
+                        <div class="parallax-container top-shape-pos-1" style="left: auto; right: -150px; top: 340px; z-index: 1;" data-scroll-speed="1.0" data-mouse-speed="0.02">
+                          <div class="parallax-shape">
+                            <svg width="131.377686" height="131.377930" viewBox="0 0 131.378 131.378" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <rect id="Groupe 61" width="131.377686" height="131.377686" fill="#FFFFFF" fill-opacity="0"/>
+                              <mask id="mask1_3799" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="131.377686" height="131.377930">
+                                <g style="mix-blend-mode:normal">
+                                  <rect id="Rectangle 95" width="131.377686" height="131.377686" fill="#F55057" fill-opacity="1.000000"/>
+                                </g>
+                              </mask>
+                              <g mask="url(#mask1_3799)">
+                                <g style="mix-blend-mode:normal">
+                                  <path id="Tracé 113" d="M0 131.37C72.55 131.37 131.37 72.55 131.37 0C58.81 0 0 58.81 0 131.37Z" fill="#F55057" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                </g>
+                              </g>
+                            </svg>                                                                                    
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6 position-relative">
+                        <div class="mb-5">
+                          <div class="parallax-container top-shape-pos-1" style="left: 0px; top: 10px; z-index: 1;" data-scroll-speed="1.2" data-mouse-speed="0.05">
+                            <div class="parallax-shape">
+                              <svg width="144.066666" height="144.066895" viewBox="0 0 144.067 144.067" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <rect id="Groupe 63" width="144.066681" height="144.066681" fill="#FFFFFF" fill-opacity="0"/>
+                                <mask id="mask1_3802" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="144.066666" height="144.066895">
+                                  <g style="mix-blend-mode:normal">
+                                    <rect id="Rectangle 96" width="144.066681" height="144.066681" fill="#66A2FC" fill-opacity="1.000000"/>
+                                  </g>
+                                </mask>
+                                <g mask="url(#mask1_3802)">
+                                  <g style="mix-blend-mode:normal">
+                                    <path id="Tracé 114" d="M144.06 72.03C84.74 79.05 79.05 84.74 72.03 144.06C65.01 84.74 59.32 79.05 0 72.03C59.32 65.01 65.01 59.32 72.03 0C79.05 59.32 84.74 65.01 144.06 72.03Z" fill="#66A2FC" fill-opacity="1.000000" fill-rule="nonzero"/>
+                                  </g>
+                                </g>
+                              </svg>                                                                                    
+                            </div>
+                          </div>
+                            <p>“La formation Le jardin de Pirouette et Cabriole m’a donné des outils concrets adaptés à tous les âges des enfants que j’accompagne. Elle me permet d’animer des ateliers en famille et d’accompagner les enfants dans leur développement moteur et cognitif avec confiance. Voir leurs progrès et leur plaisir est une vraie satisfaction !”</p>
+                          <div><span class="fw-700">– Mathilde, </span><span class="fw-400">animatrice au centre XXX</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>  
+                </div>
               </div>
             </div>
-            <div class="parallax-container faq-shape-pos-2" data-scroll-speed="1.2" data-mouse-speed="0.01">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+      </div>
+      </section>
+      <section class="activities-section section position-relative">
+        <div class="container">
+          <h3 class="mb-4 fw-700">Découvrez nos activités à faire à la maison </h3>
+          <div class="mb-3">
+            <p>Accédez à de nombreuses activités à faire à la maison, adaptées à l’âge de votre enfant.</p>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6 col-xl-3">
+              <div class="feature-box activity-box matchHeight mb-4 p-0">
+                <a href="#" class="p-0">
+                  <span class="top-box overflow-hidden p-0">
+                    <img srcset="images/babies-playing-toget@2x.webp 2x, images/babies-playing-toget.webp 1x" src="images/babies-playing-toget.webp" alt="" class="img-fluid w-100">
+                  </span>
+                </a>
+                <div class="inner p-3">
+                  <ul class="shapes-info position-absolute">
+                    <li>
+                      <img srcset="images/cartoon-5@2x.png 2x, images/cartoon-5.png 1x" src="images/cartoon-5.png" alt="">                     
+                    </li>
+                  </ul>
+                  <div class="pt-5">
+                    <h6 class="fw-700 mb-1">6 à 12 mois</h6>
+                    <h5 class="mb-0 fw-700"><a href="#" class="text-link text-decoration-none color-blue">Le miroir magique</a></h5>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3">
+              <div class="feature-box activity-box matchHeight mb-4 p-0">
+                <a href="#" class="p-0">
+                  <span class="top-box overflow-hidden p-0">
+                    <img srcset="images/little-kids-playing-@2x.webp 2x, images/little-kids-playing-.webp 1x" src="images/little-kids-playing-.webp" alt="" class="img-fluid w-100">
+                  </span>
+                </a>
+                <div class="inner p-3">
+                  <ul class="shapes-info position-absolute">
+                    <li>
+                      <img srcset="images/cartoon-1@2x.png 2x, images/cartoon-1.png 1x" src="images/cartoon-1.png" alt="">                     
+                    </li>
+                    <li>
+                      <img srcset="images/cartoon-2@2x.png 2x, images/cartoon-2.png 1x" src="images/cartoon-2.png" alt="">                     
+                    </li>
+                  </ul>
+                  <div class="pt-5">
+                    <h6 class="fw-700 mb-1">12 à 18 mois</h6>
+                    <h5 class="mb-0 fw-700"><a href="#" class="text-link text-decoration-none color-blue">Texture et couleur</a></h5>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3">
+              <div class="feature-box activity-box matchHeight mb-4 p-0">
+                <a href="#" class="p-0">
+                  <span class="top-box overflow-hidden p-0">
+                    <img srcset="images/portrait-childrens-p@2x.webp 2x, images/portrait-childrens-p.webp 1x" src="images/portrait-childrens-p.webp" alt="" class="img-fluid w-100">
+                  </span>
+                </a>
+                <div class="inner p-3">
+                  <ul class="shapes-info position-absolute">
+                    <li>
+                      <img srcset="images/cartoon-3@2x.png 2x, images/cartoon-3.png 1x" src="images/cartoon-3.png" alt="">                     
+                    </li>
+                    <li>
+                      <img srcset="images/cartoon-4@2x.png 2x, images/cartoon-4.png 1x" src="images/cartoon-4.png" alt="">                     
+                    </li>
+                  </ul>
+                  <div class="pt-5">
+                    <h6 class="fw-700 mb-1">2 ½ à 4 ans</h6>
+                    <h5 class="mb-0 fw-700"><a href="#" class="text-link text-decoration-none color-blue">La plus haute tour !</a></h5>  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 col-xl-3">
+              <div class="feature-box activity-box matchHeight mb-4 p-0">
+                <a href="#" class="p-0">
+                  <span class="top-box overflow-hidden p-0">
+                    <img srcset="images/little-kid-playing.@2xwebp 2x, images/little-kid-playing.webp 1x" src="images/little-kid-playing.webp" alt="" class="img-fluid w-100">
+                  </span>
+                </a>
+                <div class="inner p-3">
+                  <ul class="shapes-info position-absolute">
+                    <li>
+                      <img srcset="images/cartoon-1@2x.png 2x, images/cartoon-1.png 1x" src="images/cartoon-1.png" alt="">                     
+                    </li>
+                    <li>
+                      <img srcset="images/cartoon-2@2x.png 2x, images/cartoon-2.png 1x" src="images/cartoon-2.png" alt="">                     
+                    </li>
+                    <li>
+                      <img srcset="images/cartoon-3@2x.png 2x, images/cartoon-3.png 1x" src="images/cartoon-3.png" alt="">                     
+                    </li>
+                  </ul>
+                  <div class="pt-5">
+                    <h6 class="fw-700 mb-1">6 à 18 mois</h6>
+                    <h5 class="mb-0 fw-700"><a href="#" class="text-link text-decoration-none color-blue">On s’étire</a></h5>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary border-green bg-green d-flex align-items-center fw-700"><span class="me-1">DÉCOUVRIR PLUS D’ACTIVITÉS À FAIRE À LA MAISON</span><i class="fas fa-arrow-right"></i></a></div>
+          <div class="parallax-container top-shape-pos-3" style="top: 3%; left: auto; right: 10%;" data-scroll-speed="1" data-mouse-speed="0.05">
+            <div class="parallax-shape">
+              <svg width="67.921875" height="67.921875" viewBox="0 0 67.9219 67.9219" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g style="mix-blend-mode:normal">
+                  <path id="Tracé 167" d="M28.74 0L28.74 14.66L21.42 1.98L12.46 7.15L19.79 19.85L7.11 12.53L1.94 21.49L14.64 28.82L0 28.82L0 39.17L14.66 39.17L1.98 46.49L7.15 55.45L19.85 48.12L12.53 60.8L21.49 65.97L28.82 53.27L28.82 67.92L39.17 67.92L39.17 53.25L46.49 65.93L55.45 60.76L48.12 48.06L60.8 55.38L65.97 46.42L53.27 39.09L67.92 39.09L67.92 28.74L53.25 28.74L65.93 21.42L60.76 12.46L48.06 19.79L55.38 7.11L46.42 1.94L39.09 14.64L39.09 0L28.74 0Z" fill="#FFFCF8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </g>
+              </svg>                                                
+            </div>
+          </div>
+          <div class="parallax-container top-shape-pos-3" style="top: auto; bottom: -60px; left: auto; right: 20%;" data-scroll-speed="1" data-mouse-speed="0.05">
+            <div class="parallax-shape">
+              <svg width="65.245117" height="60.691406" viewBox="0 0 65.2451 60.6914" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g style="mix-blend-mode:normal">
+                  <path id="Tracé 166" d="M52.04 52.04C67.67 38.93 69.71 15.62 56.6 0L37.54 15.98C41.83 21.09 41.16 28.7 36.05 32.99C30.95 37.27 23.33 36.61 19.05 31.5L0 47.49C13.11 63.12 36.41 65.16 52.04 52.04Z" fill="#005175" fill-opacity="1.000000" fill-rule="nonzero"/>
+                </g>
+              </svg>                                                             
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="featured-section content-section py-5 section">
+        <div class="container">
+          <div class="row g-4 justify-content-center position-relative">
+            <div class="col-12 col-xl-3">
+              <h3 class=" fw-700">Les dernières actualités de Pirouette et Cabriole</h3>
+              <p>Découvrez des témoignages, des conseils et des réflexions de parents et d’experts pour vous inspirer.</p>
+              <div class="parallax-container top-shape-pos-1" style="left: -15%; top: 5%;" data-scroll-speed="1.2" data-mouse-speed="0.01">
+                <div class="parallax-shape">
+                  <svg width="137.118042" height="137.118164" viewBox="0 0 137.118 137.118" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect id="Groupe 94" width="137.118027" height="137.118042" fill="#FFFFFF" fill-opacity="0"/>
+                    <mask id="mask1_88" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="137.118042" height="137.117920">
+                      <g style="mix-blend-mode:normal">
+                        <rect id="Rectangle 91" y="44.952148" width="102.543823" height="102.543823" transform="rotate(-26 0.000000 44.952148)" fill="#FFCB5C" fill-opacity="1.000000"/>
+                      </g>
+                    </mask>
+                    <g mask="url(#mask1_88)">
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 110" d="M83.89 61.07C160.35 73.22 143.76 121.39 76.04 83.89C63.89 160.35 15.72 143.76 53.21 76.04C-23.24 63.89 -6.66 15.72 61.07 53.21C73.22 -23.24 121.39 -6.66 83.89 61.07Z" fill="#FFCB5C" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                    </g>
+                  </svg>                                     
+                </div>
+              </div>
+              <div class="parallax-container top-shape-pos-2" style="top: 100%;" data-scroll-speed="1.2" data-mouse-speed="0.01">
+                <div class="parallax-shape">
+                  <svg width="164.384888" height="163.705566" viewBox="0 0 164.385 163.706" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask1_270" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="164.384888" height="163.705566">
+                      <g style="mix-blend-mode:normal">
+                        <rect id="Rectangle 99" x="92.428833" y="163.705566" width="118.933678" height="114.339241" transform="rotate(-141 92.428833 163.705566)" fill="#54CDFF" fill-opacity="1.000000"/>
+                      </g>
+                    </mask>
+                    <g mask="url(#mask1_270)">
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 126" d="M35.97 44.42C39.88 39.61 47.02 38.5 51.96 35.3C57.07 31.98 61.03 25.94 66.8 24.4C72.62 22.85 79.07 26.12 85.09 26.43C91.06 26.74 97.81 24.13 103.51 26.32C109 28.43 112.29 34.82 117.11 38.72C121.93 42.63 128.87 44.52 132.07 49.45C135.39 54.56 134.25 61.72 135.79 67.48C137.35 73.31 141.89 78.94 141.58 84.96C141.27 90.92 136.19 96.05 134.01 101.74C131.9 107.23 132.3 114.45 128.4 119.27C124.5 124.09 117.35 125.19 112.42 128.4C107.31 131.72 103.35 137.75 97.58 139.29C91.75 140.85 85.3 137.58 79.28 137.27C73.32 136.96 66.56 139.57 60.87 137.38C55.38 135.27 52.09 128.87 47.27 124.97C42.45 121.07 35.51 119.18 32.3 114.25C28.98 109.13 30.13 101.98 28.59 96.21C27.03 90.39 22.49 84.76 22.8 78.74C23.11 72.77 28.18 67.65 30.37 61.96C32.48 56.47 32.07 49.24 35.97 44.42Z" fill="#54CDFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                    </g>
+                  </svg>                  
+                </div>
+              </div>
+              <div class="parallax-container top-shape-pos-3" style="top: 80%; left: 70%;" data-scroll-speed="1" data-mouse-speed="0.05">
+                <div class="parallax-shape">
+                  <svg width="43.967529" height="43.967773" viewBox="0 0 43.9675 43.9678" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask1_99" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="43.967529" height="43.967773">
+                      <g style="mix-blend-mode:normal">
+                        <rect id="Rectangle 106" width="43.967529" height="43.967529" fill="#005175" fill-opacity="1.000000"/>
+                      </g>
+                    </mask>
+                    <g mask="url(#mask1_99)">
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 168" d="M41.29 19.31L28.43 19.31L37.52 10.21C38.57 9.17 38.57 7.48 37.52 6.43C36.48 5.39 34.79 5.39 33.74 6.43L24.65 15.53L24.65 2.67C24.65 1.19 23.45 0 21.98 0C20.5 0 19.31 1.19 19.31 2.67L19.31 15.53L10.21 6.43C9.17 5.39 7.48 5.39 6.43 6.43C5.39 7.48 5.39 9.17 6.43 10.21L15.53 19.31L2.67 19.31C1.19 19.31 0 20.5 0 21.98C0 23.45 1.19 24.65 2.67 24.65L15.53 24.65L6.43 33.74C5.39 34.79 5.39 36.48 6.43 37.52C7.48 38.57 9.17 38.57 10.21 37.52L19.31 28.43L19.31 41.29C19.31 42.77 20.5 43.96 21.98 43.96C23.45 43.96 24.65 42.77 24.65 41.29L24.65 28.43L33.74 37.52C34.79 38.57 36.48 38.57 37.52 37.52C38.57 36.48 38.57 34.79 37.52 33.74L28.43 24.65L41.29 24.65C42.77 24.65 43.96 23.45 43.96 21.98C43.96 20.5 42.77 19.31 41.29 19.31Z" fill="#005175" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                    </g>
+                  </svg>                                   
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-9 position-relative">
+              <div class="parallax-container top-shape-pos-3" style="top: 10px; left: auto; right: 8%; z-index: 1;" data-scroll-speed="1" data-mouse-speed="0.05">
+                <div class="parallax-shape">
+                  <svg width="192.546387" height="187.925293" viewBox="0 0 192.546 187.925" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask1_85" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="192.546387" height="187.925049">
+                      <g style="mix-blend-mode:normal">
+                        <rect id="Rectangle 41" y="47.764893" width="154.570755" height="147.373184" transform="rotate(-18 0.000000 47.764893)" fill="#F55057" fill-opacity="1.000000"/>
+                      </g>
+                    </mask>
+                    <g mask="url(#mask1_85)">
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 103" d="M169.77 70.08C172.01 76.95 153.06 87.1 153.07 93.96C153.07 101.07 171.93 111.23 169.77 117.85C167.6 124.53 146.33 121.65 142.2 127.34C138.11 132.98 147.46 152.32 141.7 156.5C136.15 160.53 120.69 145.72 113.81 147.96C106.94 150.19 103.13 171.26 96.27 171.26C89.16 171.26 85.35 150.12 78.73 147.96C72.04 145.79 56.54 160.62 50.84 156.49C45.21 152.4 54.5 133.1 50.32 127.34C46.29 121.79 25 124.72 22.77 117.84C20.53 110.96 39.47 100.82 39.47 93.96C39.47 86.85 20.61 76.69 22.76 70.07C24.94 63.38 46.21 66.27 50.34 60.57C54.42 54.94 45.08 35.59 50.83 31.42C56.38 27.39 71.84 42.19 78.72 39.96C85.6 37.72 89.41 16.66 96.27 16.65C103.38 16.65 107.19 37.79 113.81 39.95C120.49 42.13 136 27.3 141.69 31.42C147.33 35.51 138.04 54.82 142.22 60.57C146.25 66.12 167.54 63.2 169.77 70.08Z" fill="#F55057" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                    </g>
+                  </svg>                                                                         
+                </div>
+              </div>
+                  <div class="row">
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="feature-box matchHeight mb-4 p-0">
+                    <a href="#" class="p-0">
+                      <span class="top-box overflow-hidden p-0">
+                        <img srcset="images/kids-playing-with-ec@2x.webp 2x, images/kids-playing-with-ec.webp 1x" src="images/kids-playing-with-ec.webp" alt="" class="img-fluid w-100">
+                      </span>
+                    </a>
+                    <div class="inner p-3">
+                      <h6 class="fw-700 mb-1">Balado</h6>
+                      <h5 class="mb-5 fw-700"><a href="#" class="text-link text-decoration-none color-blue">Grandir un jeu d’enfant</a></h5>
+                      <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                      <a href="#" class="btn btn-secondary border-light-blue">Écouter</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="feature-box matchHeight mb-4 p-0">
+                    <a href="#" class="p-0">
+                      <span class="top-box overflow-hidden p-0">
+                        <img srcset="images/portrait-two-young-m@2x.webp 2x, images/portrait-two-young-m.webp 1x" src="images/portrait-two-young-m.webp" alt="" class="img-fluid w-100">
+                      </span>
+                    </a>
+                    <div class="inner p-3">
+                      <h6 class="fw-700 mb-1">Article</h6>
+                      <h5 class="mb-5 fw-700"><a href="#" class="text-link text-decoration-none color-blue">Bouger pour mieux apprendre : le lien entre motricité et cognition</a></h5>
+                      <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                      <a href="#" class="btn btn-secondary border-light-blue">Lire la suite</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6 col-xl-4">
+                  <div class="feature-box matchHeight mb-4 p-0">
+                    <a href="#" class="p-0">
+                      <span class="top-box overflow-hidden p-0">
+                        <img srcset="images/two-little-brothers-@2x.webp 2x, images/two-little-brothers-.webp 1x" src="images/two-little-brothers-.webp" alt="" class="img-fluid w-100">
+                      </span>
+                    </a>
+                    <div class="inner p-3">
+                      <h6 class="fw-700 mb-1">Article</h6>
+                      <h5 class="mb-5 fw-700"><a href="#" class="text-link text-decoration-none color-blue">Les grandes étapes du développement moteur de l’enfant</a></h5>
+                      <p class="mb-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna</p>
+                      <a href="#" class="btn btn-secondary border-light-blue">Lire la suite</a>
+                    </div>
+                  </div>
+                </div>    
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-3"><a href="#" class="btn btn-primary border-green bg-green d-flex align-items-center fw-700"><span class="me-1">PLUS DE RESSOURCES</span><i class="fas fa-arrow-right"></i></a></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer text-center text-sm-start">
+      <div class="pre-footer">
+        <div class="container">
+          <div class="view-faq-box px-3 px-lg-5 py-5 rounded-4 content-section color-blue bg-light-green top-0">
+            <h2 class="mb-2 mb-lg-2 fw-400">Devenez membre !</h2>
+            <h4 class="fw-500">Vous êtes un centre communautaire de loisir, une municipalité ou un organisme à but non lucratif, et vous souhaitez offrir le programme dans votre communauté ? </h4>
+            <h3 class="fw-700 mb-5">Les avantages du programme</h3>
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="d-flex flex-row align-items-start justify-content-start">
+                  <div class="me-2 mb-2">
+                    <svg width="73.750000" height="70.900879" viewBox="0 0 73.75 70.9009" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 99" d="M73.75 35.45C73.75 39.29 70.73 42.61 69.6 46.08C68.44 49.68 68.88 54.13 66.7 57.12C64.5 60.14 60.12 61.09 57.09 63.29C54.1 65.46 51.86 69.36 48.27 70.52C44.8 71.65 40.71 69.85 36.87 69.85C33.03 69.85 28.94 71.65 25.47 70.52C21.88 69.36 19.64 65.46 16.64 63.29C13.62 61.09 9.24 60.14 7.04 57.12C4.86 54.13 5.3 49.68 4.14 46.08C3.01 42.61 0 39.29 0 35.45C0 31.6 3.01 28.28 4.14 24.81C5.3 21.21 4.86 16.76 7.04 13.77C9.24 10.75 13.62 9.81 16.64 7.61C19.64 5.43 21.88 1.53 25.47 0.37C28.94 -0.76 33.03 1.04 36.87 1.04C40.71 1.04 44.8 -0.76 48.27 0.37C51.86 1.53 54.1 5.43 57.09 7.61C60.12 9.81 64.5 10.75 66.7 13.77C68.88 16.76 68.44 21.21 69.6 24.81C70.73 28.28 73.75 31.6 73.75 35.45Z" fill="#FFFCF8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 133" d="M53.34 34.23L53.34 49.66C53.34 53.07 50.58 55.83 47.17 55.83L23.65 55.83C20.24 55.83 17.48 53.07 17.48 49.66L17.48 22.22C17.48 18.82 20.24 16.06 23.65 16.06L47.17 16.06C47.99 16.06 48.77 16.22 49.48 16.5L48.66 17.42L36.6 30.85C36.47 30.99 36.35 31.15 36.24 31.3C35.92 31.75 35.67 32.24 35.51 32.77L33.44 39.49L32.9 41.26C32.89 41.29 32.87 41.36 32.86 41.39C32.66 42.13 32.72 42.85 32.95 43.48C33.25 44.29 33.85 44.96 34.61 45.36C35.47 45.82 36.54 45.92 37.59 45.47L39.29 44.74L45.75 41.97C46.26 41.75 46.72 41.45 47.13 41.09C47.28 40.96 47.41 40.83 47.54 40.68L51.59 36.17L53.34 34.23Z" fill="#DEE9EF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 134" d="M32.95 41.47C32.96 41.43 32.88 41.32 32.89 41.29C32.91 41.35 32.93 41.41 32.95 41.47Z" fill="#FFF1CF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 135" d="M32.95 41.47C32.96 41.43 32.88 41.32 32.89 41.29C32.91 41.35 32.93 41.41 32.95 41.47Z" fill="#FCE3A0" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 136" d="M61.46 25.18L53.34 34.23L51.59 36.17L47.54 40.68C47.41 40.83 47.28 40.96 47.13 41.09C46.01 38.99 44.47 37 42.53 35.26C40.59 33.52 38.44 32.2 36.24 31.3C36.35 31.15 36.47 30.99 36.6 30.85L48.66 17.42L49.48 16.5L50.52 15.35C51.77 13.96 53.91 13.84 55.3 15.09L61.21 20.4C62.6 21.65 62.71 23.79 61.46 25.18Z" fill="#66A2FC" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 137" d="M47.13 41.09C46.72 41.45 46.26 41.75 45.75 41.97L39.29 44.74C39.65 43.2 39.18 41.52 37.92 40.39C36.66 39.26 34.94 38.97 33.44 39.49L35.51 32.77C35.67 32.24 35.92 31.75 36.23 31.3C38.44 32.2 40.59 33.52 42.53 35.26C44.47 37 46.01 38.99 47.13 41.09Z" fill="#FFCB5C" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 138" d="M39.29 44.74L37.59 45.47C36.54 45.92 35.47 45.82 34.61 45.36C33.85 44.96 33.25 44.29 32.95 43.48C32.72 42.85 32.66 42.13 32.86 41.39C32.84 41.33 32.91 41.35 32.89 41.29L33.44 39.49C34.94 38.97 36.66 39.26 37.92 40.39C39.18 41.52 39.65 43.2 39.29 44.74Z" fill="#66A2FC" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 139" d="M32.95 41.47C32.96 41.43 32.88 41.32 32.89 41.29C32.91 41.35 32.93 41.41 32.95 41.47Z" fill="#29CE69" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                    </svg>                    
+                  </div>
+                  <div class="mb-3 mb-lg-0">
+                    <h4 class="mb-2 fw-700">Un programme clé en main </h4>
+                    <p>Accédez à des outils pratiques et des ressources adaptées pour une mise en place simplifiée.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="d-flex flex-row align-items-start justify-content-start">
+                  <div class="me-2 mb-2">
+                    <svg width="73.750000" height="70.158203" viewBox="0 0 73.75 70.1582" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 165" d="M48.27 0L36.87 2.78L25.47 0L17.89 8.94L7.04 13.4L6.15 25.09L0 35.07L6.15 45.06L7.04 56.75L17.89 61.2L25.47 70.15L36.87 67.37L48.27 70.15L55.85 61.2L66.7 56.75L67.59 45.06L73.75 35.07L67.59 25.09L66.7 13.4L55.85 8.94L48.27 0Z" fill="#FFFCF8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 140" d="M47.97 26.64L25.77 26.64C23.16 26.64 21.05 24.52 21.05 21.91L21.05 50.63C21.05 53.24 23.16 55.36 25.77 55.36L47.97 55.36C50.58 55.36 52.69 53.24 52.69 50.63L52.69 21.91C52.69 24.52 50.58 26.64 47.97 26.64ZM34.24 48.54C34.12 49.08 33.89 49.59 33.57 50.03C33.06 50.74 32.32 51.28 31.47 51.55C31.08 51.67 30.67 51.73 30.24 51.73C27.98 51.73 26.14 49.9 26.14 47.63C26.14 45.69 27.49 44.06 29.3 43.64C29.6 43.57 29.92 43.53 30.24 43.53C30.33 43.53 30.43 43.53 30.52 43.54C30.84 43.56 31.15 43.62 31.44 43.71C33.12 44.22 34.34 45.78 34.34 47.63C34.34 47.94 34.31 48.24 34.24 48.54ZM32.74 38.47L27.74 38.47C27.68 38.47 27.61 38.47 27.55 38.46C26.17 38.33 25.35 36.8 26.06 35.56L26.97 33.98L28.56 31.23C28.62 31.13 28.69 31.03 28.76 30.95C29.18 30.45 29.8 30.22 30.4 30.27C31 30.32 31.58 30.64 31.92 31.23L34.42 35.56C35.16 36.85 34.23 38.47 32.74 38.47ZM47.6 49.76C47.6 50.85 46.72 51.73 45.62 51.73L41.38 51.73C40.28 51.73 39.4 50.85 39.4 49.76L39.4 45.51C39.4 44.41 40.28 43.53 41.38 43.53L45.62 43.53C46.72 43.53 47.6 44.41 47.6 45.51L47.6 49.76ZM47.88 34.98L46.22 37.86C46 38.24 45.6 38.47 45.16 38.47L41.84 38.47C41.4 38.47 41 38.24 40.78 37.86L39.12 34.98C38.9 34.6 38.9 34.13 39.12 33.75L40.78 30.88C41 30.5 41.4 30.26 41.84 30.26L45.16 30.26C45.6 30.26 46 30.5 46.22 30.88L47.88 33.75C48.1 34.13 48.1 34.6 47.88 34.98Z" fill="#FFCB5C" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 141" d="M52.69 20.31L52.69 21.91C52.69 24.52 50.58 26.64 47.97 26.64L25.77 26.64C23.16 26.64 21.05 24.52 21.05 21.91L21.05 20.31C21.05 17.7 23.16 15.58 25.77 15.58L47.97 15.58C50.58 15.58 52.69 17.7 52.69 20.31Z" fill="#54CDFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 142" d="M32.74 38.47L27.74 38.47C27.68 38.47 27.61 38.47 27.55 38.46C26.17 38.33 25.35 36.8 26.06 35.56L26.97 33.98L28.56 31.23C28.62 31.13 28.69 31.03 28.76 30.95C29.18 30.45 29.8 30.22 30.4 30.27C31 30.32 31.58 30.64 31.92 31.23L34.42 35.56C35.16 36.85 34.23 38.47 32.74 38.47Z" fill="#005175" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 143" d="M47.88 34.98L46.22 37.86C46 38.24 45.6 38.47 45.16 38.47L41.84 38.47C41.4 38.47 41 38.24 40.78 37.86L39.12 34.98C38.9 34.6 38.9 34.13 39.12 33.75L40.78 30.88C41 30.5 41.4 30.26 41.84 30.26L45.16 30.26C45.6 30.26 46 30.5 46.22 30.88L47.88 33.75C48.1 34.13 48.1 34.6 47.88 34.98Z" fill="#3C9851" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 144" d="M47.6 45.51L47.6 49.76C47.6 50.85 46.72 51.73 45.62 51.73L41.38 51.73C40.28 51.73 39.4 50.85 39.4 49.76L39.4 45.51C39.4 44.41 40.28 43.53 41.38 43.53L45.62 43.53C46.72 43.53 47.6 44.41 47.6 45.51Z" fill="#66A2FC" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 145" d="M34.34 47.63C34.34 47.94 34.31 48.24 34.24 48.53C34.12 49.08 33.89 49.59 33.57 50.03C33.06 50.74 32.32 51.28 31.47 51.55C31.08 51.67 30.67 51.73 30.24 51.73C27.98 51.73 26.14 49.9 26.14 47.63C26.14 45.69 27.49 44.06 29.3 43.64C29.6 43.56 29.92 43.53 30.24 43.53C30.33 43.53 30.43 43.53 30.52 43.54C30.84 43.56 31.15 43.62 31.44 43.71C33.12 44.22 34.34 45.78 34.34 47.63Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                    </svg>                    
+                  </div>
+                  <div class="mb-3 mb-lg-0">
+                    <h4 class="mb-2 fw-700">Une flexibilité totale </h4>
+                    <p>Un programme modulable qui s’adapte aux réalités et besoins spécifiques de chaque milieu.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="d-flex flex-row align-items-start justify-content-start">
+                  <div class="me-2 mb-2">
+                    <svg width="72.166992" height="72.034180" viewBox="0 0 72.167 72.0342" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <mask id="mask1_337" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="72.166992" height="72.034180">
+                        <g style="mix-blend-mode:normal">
+                          <rect id="Rectangle 97" width="72.166954" height="72.034126" fill="#FFFCF8" fill-opacity="1.000000"/>
+                        </g>
+                      </mask>
+                      <g mask="url(#mask1_337)">
+                        <g style="mix-blend-mode:normal">
+                          <path id="Tracé 116" d="M38.23 2.08C38.31 4.54 41.78 4.98 42.46 2.62C43.24 -0.06 47.25 0.97 46.64 3.69C46.1 6.09 49.35 7.37 50.6 5.26C52.02 2.86 55.64 4.85 54.38 7.34C53.26 9.52 56.09 11.58 57.82 9.84C59.79 7.87 62.81 10.7 60.97 12.79C59.34 14.63 61.57 17.33 63.68 16.07C66.08 14.66 68.3 18.15 65.99 19.71C63.96 21.09 65.45 24.26 67.81 23.57C70.48 22.79 71.76 26.73 69.14 27.67C66.83 28.5 67.48 31.93 69.94 31.85C72.72 31.77 72.98 35.9 70.21 36.16C67.76 36.39 67.54 39.87 69.94 40.41C72.66 41.02 71.88 45.08 69.13 44.64C66.71 44.26 65.63 47.58 67.82 48.7C70.3 49.96 68.54 53.71 65.98 52.6C63.73 51.62 61.85 54.57 63.7 56.2C65.79 58.04 63.15 61.23 60.95 59.52C59.01 58.01 56.46 60.4 57.84 62.43C59.41 64.74 56.06 67.17 54.35 64.97C52.85 63.03 49.79 64.71 50.62 67.02C51.57 69.64 47.72 71.17 46.61 68.61C45.64 66.35 42.25 67.22 42.49 69.67C42.75 72.44 38.64 72.96 38.21 70.21C37.82 67.78 34.33 67.78 33.95 70.21C33.51 72.96 29.41 72.44 29.67 69.67C29.9 67.22 26.52 66.35 25.54 68.61C24.44 71.17 20.59 69.64 21.54 67.02C22.37 64.71 19.31 63.03 17.8 64.97C16.09 67.17 12.75 64.74 14.31 62.43C15.7 60.4 13.15 58.01 11.21 59.52C9.01 61.23 6.37 58.04 8.46 56.2C10.3 54.57 8.43 51.62 6.18 52.6C3.62 53.71 1.86 49.96 4.34 48.7C6.53 47.58 5.45 44.26 3.03 44.64C0.27 45.08 -0.5 41.02 2.22 40.41C4.61 39.87 4.39 36.39 1.95 36.16C-0.83 35.9 -0.57 31.77 2.22 31.85C4.68 31.93 5.33 28.5 3.02 27.67C0.4 26.73 1.67 22.79 4.35 23.57C6.71 24.26 8.2 21.1 6.16 19.71C3.86 18.15 6.08 14.66 8.47 16.07C10.59 17.33 12.82 14.63 11.19 12.79C9.35 10.7 12.36 7.87 14.33 9.84C16.07 11.58 18.9 9.52 17.78 7.34C16.51 4.85 20.14 2.86 21.56 5.26C22.81 7.37 26.06 6.09 25.52 3.69C24.91 0.97 28.92 -0.06 29.7 2.62C30.38 4.98 33.85 4.54 33.92 2.08C34.01 -0.7 38.15 -0.7 38.23 2.08Z" fill="#FFFCF8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                        </g>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 146" d="M52.26 26.06C50.76 24.79 49 23.68 47.04 22.79C46.56 21.23 46.29 19.5 46.13 18.02C46.88 17.47 47.75 16.97 48.76 16.56C49.69 16.27 50.66 16.87 50.71 17.77C50.84 19.77 51.19 23.06 52.19 25.55C52.26 25.72 52.28 25.9 52.26 26.06Z" fill="#F0A8E8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 147" d="M33.89 53.56C33.23 55.87 31.1 57.56 28.57 57.56C27.88 57.56 27.22 57.44 26.61 57.2C27.15 56.99 27.68 56.69 28.17 56.28C29.13 55.47 29.81 54.35 30.05 53.07C31.32 53.32 32.61 53.48 33.89 53.56Z" fill="#F0A8E8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 148" d="M46.39 57.21C45.79 57.44 45.14 57.56 44.45 57.56L44.29 57.56C41.73 57.56 39.59 55.8 39 53.43C40.32 53.28 41.6 53.04 42.84 52.73C43.11 54.93 44.58 56.53 46.39 57.21Z" fill="#F0A8E8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 149" d="" fill="#FFC9D4" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 150" d="" fill="#FFC9D4" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 151" d="" fill="#FF9EB1" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 152" d="" fill="#FF9EB1" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 153" d="M58.51 33.08C57.73 33.08 57.03 32.6 56.72 31.88C55.78 29.73 54.25 27.75 52.26 26.06C50.76 24.79 49 23.68 47.04 22.79C46.56 21.23 46.29 19.5 46.13 18.02C46.05 17.34 46.01 16.72 45.97 16.19C45.92 15.29 44.95 14.69 44.02 14.98C40.72 16.32 38.91 18.64 37.98 20.34C37.95 20.39 37.93 20.44 37.91 20.5C36.36 20.38 34.78 20.39 33.17 20.53C34.72 21.84 35.61 23.76 35.68 25.74C36.04 25.77 36.4 25.81 36.77 25.85C37.73 25.96 38.51 26.57 38.74 27.38C39.13 28.72 37.91 30.1 36.3 30C35.05 29.92 34.91 29.97 34.47 29.93C32.89 29.93 31.06 30.14 29.36 30.51C28.85 30.63 28.35 30.76 27.82 30.92C27.65 31 27.45 31.02 26.8 31.25C26.06 31.51 25.52 31.74 24.88 32.04C24.63 32.2 24.56 32.16 23.57 32.73C22.21 33.44 20.34 32.86 19.95 31.52C19.74 30.8 20 30 20.71 29.48C21.11 29.18 21.54 28.89 21.98 28.63C21.65 27.8 21.46 26.9 21.46 25.96C21.46 25.34 21.54 24.73 21.69 24.16C19.71 25.38 18.06 26.83 16.77 28.43C16.7 28.4 16.63 28.37 16.55 28.35C16.53 28.35 14.48 27.91 13.53 26.45C13.38 26.22 13.26 25.96 13.18 25.7C15.64 26.91 17.68 25.19 17.68 23.21C17.68 21.06 15.91 19.91 14.31 20.21C13.54 20.35 12.57 20.86 11.96 22.37C11.67 21.92 11.39 21.4 11.12 20.81C10.94 20.41 10.47 20.24 10.07 20.43C9.68 20.61 9.51 21.07 9.69 21.47C10.24 22.66 10.84 23.63 11.5 24.36C11.41 25.46 11.65 26.45 12.22 27.32C13.22 28.86 14.97 29.54 15.79 29.78C12.37 35.07 12.66 41.66 17.99 46.98C18.7 47.69 19.09 48.67 19.09 49.68L19.09 52.03C19.09 56.09 23.19 58.53 26.61 57.2C27.15 56.99 27.68 56.69 28.17 56.28C29.13 55.47 29.81 54.35 30.05 53.07C31.32 53.32 32.61 53.48 33.89 53.56C35.09 53.63 36.29 53.63 37.46 53.56C37.98 53.53 38.49 53.48 39 53.43C40.32 53.28 41.6 53.04 42.84 52.73C43.11 54.93 44.58 56.53 46.39 57.21C48.29 57.91 50.56 57.61 52.23 55.94C53.23 54.94 53.85 53.56 53.85 52.03L53.85 47.13C53.85 46.73 54 46.33 54.26 46.03C55.34 44.77 56.84 44.14 58.37 44.14L58.51 44.14C60.73 44.14 62.54 42.33 62.54 40.1L62.54 37.11C62.54 34.88 60.73 33.08 58.51 33.08ZM14.59 21.76C15.96 21.5 16.61 23.36 15.66 24.2C14.94 24.85 13.91 24.43 13.17 23.8C13.44 22.57 13.92 21.88 14.59 21.76Z" fill="#FFCEF7" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 154" d="M36.3 30C35.05 29.92 34.91 29.97 34.47 29.93C35.35 28.64 35.73 27.17 35.68 25.74C36.04 25.77 36.4 25.81 36.77 25.85C37.73 25.96 38.51 26.57 38.74 27.38C39.13 28.72 37.91 30.1 36.3 30Z" fill="#F0A8E8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 155" d="M24.87 32.03C24.62 32.2 24.56 32.16 23.57 32.73C22.21 33.44 20.34 32.86 19.95 31.52C19.74 30.8 20 30 20.71 29.48C21.11 29.18 21.54 28.89 21.98 28.63C22.4 29.68 23.07 30.61 23.93 31.35C24.22 31.6 24.54 31.83 24.87 32.03Z" fill="#F0A8E8" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 156" d="" fill="#FF758F" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 157" d="" fill="#FCEC78" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 158" d="" fill="#FCEC78" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 159" d="M34.47 29.93C32.89 29.93 31.06 30.14 29.36 30.51L29.36 29.84C29.89 29.74 30.37 29.54 30.75 29.27C31.36 28.84 31.73 28.23 31.73 27.55C31.73 26.84 31.34 26.21 30.7 25.79C29.6 25.04 28.61 25.26 27.97 25.11C27.6 25.03 27.32 24.87 27.16 24.71C27.05 24.6 26.99 24.49 26.99 24.39C26.99 24.16 27.29 23.87 27.79 23.71C27.99 23.64 28.23 23.6 28.5 23.59C28.93 23.57 29.48 23.69 29.85 23.95C30.85 24.67 32.28 22.64 29.36 22.09C29.36 21.98 29.34 21.8 29.3 21.71C29.28 21.66 29.25 21.62 29.23 21.58C29.12 21.41 28.96 21.31 28.78 21.26C28.52 21.18 28.22 21.25 28.01 21.46C27.88 21.6 27.79 21.81 27.79 22.09C25.24 22.56 24.72 24.91 26.35 26.09C26.55 26.24 26.78 26.37 27.05 26.47C27.2 26.53 27.36 26.58 27.53 26.62C27.86 26.71 28.21 26.75 28.57 26.75C29.54 26.75 30.16 27.22 30.16 27.55C30.16 28.24 28.18 28.71 27.23 27.93C27.18 27.89 27.14 27.85 27.11 27.82C26.98 27.66 26.79 27.57 26.6 27.54C26.39 27.52 26.17 27.58 26 27.73C25.68 28 25.64 28.47 25.89 28.8C26.16 29.12 26.54 29.41 26.96 29.59C27.2 29.69 27.45 29.77 27.72 29.83C27.72 30.73 27.78 30.77 27.81 30.9C27.65 30.99 27.45 31.02 26.8 31.25C26.06 31.51 25.52 31.74 24.88 32.04C24.55 31.84 24.22 31.6 23.93 31.35C23.07 30.61 22.4 29.68 21.98 28.63C21.65 27.8 21.46 26.9 21.46 25.96C21.46 25.34 21.54 24.73 21.69 24.16C22.67 20.4 26.63 17.99 30.57 19.14C31.57 19.43 32.44 19.91 33.17 20.53C34.72 21.84 35.61 23.76 35.68 25.74C35.73 27.17 35.35 28.64 34.47 29.93Z" fill="#FFCB5C" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 160" d="" fill="#FFCF6B" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 161" d="" fill="#FFCF6B" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 162" d="" fill="#FFCF6B" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 163" d="M31.73 27.55C31.73 28.23 31.36 28.84 30.75 29.27C30.37 29.54 29.89 29.74 29.36 29.84L29.36 30.51C28.85 30.63 28.35 30.76 27.82 30.92C27.78 30.79 27.79 30.74 27.79 29.84C27.52 29.79 27.2 29.69 26.96 29.59C26.54 29.41 26.18 29.15 25.91 28.84C25.66 28.51 25.68 28 26 27.73C26.17 27.58 26.39 27.52 26.6 27.54C26.79 27.57 26.98 27.66 27.11 27.82C27.14 27.85 27.18 27.89 27.23 27.93C28.18 28.71 30.16 28.24 30.16 27.55C30.16 27.22 29.54 26.75 28.57 26.75C28.21 26.75 27.86 26.71 27.53 26.62C27.36 26.58 27.2 26.53 27.05 26.47C26.78 26.37 26.55 26.24 26.35 26.09C24.72 24.91 25.24 22.56 27.79 22.09C27.79 21.81 27.88 21.6 28.02 21.46C28.22 21.25 28.52 21.18 28.78 21.26C28.96 21.31 29.12 21.41 29.23 21.58C29.25 21.62 29.28 21.66 29.3 21.71C29.34 21.8 29.36 21.91 29.36 22.02C32.28 22.56 30.85 24.67 29.85 23.95C29.48 23.69 28.93 23.57 28.5 23.59C28.24 23.6 27.99 23.64 27.79 23.71C27.29 23.87 26.99 24.16 26.99 24.39C26.99 24.49 27.05 24.6 27.16 24.71C27.32 24.87 27.6 25.03 27.97 25.11C28.61 25.26 29.6 25.04 30.7 25.79C31.34 26.21 31.73 26.84 31.73 27.55Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                      <g style="mix-blend-mode:normal">
+                        <path id="Tracé 164" d="" fill="#FFCF6B" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      </g>
+                    </svg>                                      
+                  </div>
+                  <div class="mb-3 mb-lg-0">
+                    <h4 class="mb-2 fw-700">Un coût d’adhésion transparent </h4>
+                    <p>Un tarif clair, payé une seule fois, sans frais annuels récurrents.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center"><a href="#" class="btn btn-primary bg-green border-green px-3 py-2"><span class="fw-700 me-2">DEVENIR MEMBRE</span><i class="fas fa-arrow-right"></i></a></div>
+            <div class="parallax-container faq-shape-pos-3" data-scroll-speed="1.2" data-mouse-speed="0.01">
               <div class="parallax-shape">
-                <svg width="119.872070" height="116.995117" viewBox="0 0 119.872 116.995" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  
-                  <mask id="mask1_1227" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="119.872070" height="116.995117">
+                <svg width="88.763672" height="88.763672" viewBox="0 0 88.7637 88.7637" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <mask id="mask1_359" mask-type="alpha" maskUnits="userSpaceOnUse" x="0.000000" y="0.000000" width="88.763672" height="88.763672">
                     <g style="mix-blend-mode:normal">
-                      <rect id="Rectangle 41" y="29.736816" width="96.229820" height="91.748779" transform="rotate(-18 0.000000 29.736816)" fill="#54CDFF" fill-opacity="1.000000"/>
+                      <rect id="Rectangle 101" width="88.763672" height="88.763672" fill="#F55057" fill-opacity="1.000000"/>
                     </g>
                   </mask>
-                  <g mask="url(#mask1_1227)">
+                  <g mask="url(#mask1_359)">
                     <g style="mix-blend-mode:normal">
-                      <path id="Tracé 103" d="M105.69 43.62C107.08 47.91 95.29 54.22 95.29 58.49C95.29 62.92 107.04 69.25 105.69 73.37C104.34 77.53 91.1 75.73 88.53 79.28C85.98 82.78 91.8 94.83 88.22 97.43C84.76 99.94 75.14 90.72 70.85 92.11C66.57 93.5 64.2 106.62 59.93 106.62C55.51 106.62 53.13 93.46 49.01 92.12C44.85 90.76 35.19 99.99 31.65 97.42C28.14 94.88 33.93 82.86 31.33 79.28C28.82 75.82 15.56 77.64 14.17 73.36C12.78 69.08 24.57 62.76 24.57 58.49C24.57 54.06 12.83 47.74 14.17 43.62C15.53 39.46 28.76 41.25 31.33 37.71C33.88 34.2 28.06 22.16 31.64 19.56C35.1 17.05 44.73 26.27 49.01 24.87C53.29 23.48 55.66 10.37 59.93 10.37C64.36 10.37 66.73 23.53 70.85 24.87C75.01 26.23 84.67 16.99 88.21 19.56C91.72 22.11 85.93 34.13 88.54 37.71C91.05 41.16 104.3 39.34 105.69 43.62Z" fill="#54CDFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                      <path id="Tracé 132" d="M0 44.38C23.37 46.92 41.83 65.38 44.38 88.76C46.92 65.38 65.38 46.92 88.76 44.38C65.38 41.83 46.92 23.37 44.38 0C41.83 23.37 23.37 41.83 0 44.38Z" fill="#F55057" fill-opacity="1.000000" fill-rule="nonzero"/>
                     </g>
                   </g>
-                </svg>            
+                </svg>
+                           
               </div>
             </div>
           </div>
@@ -523,6 +1390,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js" integrity="sha512-/bOVV1DV1AQXcypckRwsR9ThoCj7FqTV2/0Bm79bL3YSyLkVideFLE3MIZkq1u5t28ke1c0n31WYCOrO01dsUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/polyfill/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL"></script>
     <script src="https://unpkg.com/plyr@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/scripts.js"></script>
     <script>
        // Wait for window load
@@ -536,6 +1404,19 @@
         autoplay: true,
         muted: true,
         tooltips: true,
+      });
+
+      //experience-share swiper
+      var swiper = new Swiper(".experience-share", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
       });
     </script>
   </body>

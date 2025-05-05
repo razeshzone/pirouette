@@ -54,6 +54,22 @@ $('.logout').on('click', function (e) {
   });
 });
 
+//animate collapsible +/-
+    // Initialize collapsibles with icon animation
+    document.querySelectorAll('.collapse').forEach((collapse) => {
+      collapse.addEventListener('shown.bs.collapse', function() {
+          const targetId = '#' + this.id;
+          document.querySelector(`[data-bs-target="${targetId}"] i`)
+              .classList.replace('fa-plus', 'fa-minus');
+      });
+
+      collapse.addEventListener('hidden.bs.collapse', function() {
+          const targetId = '#' + this.id;
+          document.querySelector(`[data-bs-target="${targetId}"] i`)
+              .classList.replace('fa-minus', 'fa-plus');
+      });
+  });
+
 });
 
 //Dropdown animation
@@ -337,3 +353,22 @@ if (window.innerWidth >= 768) {
   });
 }
 
+  //slideup section animation
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.utils.toArray(".section").forEach((section, index) => {
+    gsap.from(section, {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out",
+      delay: index * 0.2, // adds 0.2s delay per section
+      scrollTrigger: {
+        trigger: section,
+        start: "top 80%",
+        toggleActions: "play none none none",
+        once: true
+      }
+    });
+  });
+  
