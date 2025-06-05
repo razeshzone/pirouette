@@ -233,7 +233,10 @@ header.header{
     left: auto;
     right: 0 !important;
   }
-  
+  .logo{
+    width: 100%;
+    max-width: 335px;
+  }
 }
 @media(min-width:1920px){
   .navbar-expand-xl .navbar-nav .nav-link{
