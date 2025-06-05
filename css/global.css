@@ -232,8 +232,8 @@ h6 {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active {
-  background: rgba(var(--white-rgb), 1);
-  color: var(--color-primary);
+  background: var(--color-primary);
+  color: rgba(var(--white-rgb), 1);
 }
 .btn-primary:hover svg path,
 .btn-primary:focus svg path,
