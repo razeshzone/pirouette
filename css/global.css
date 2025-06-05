@@ -215,6 +215,7 @@ h6 {
   background: var(--color-primary);
   transition: var(--easeInOut);
   font-size: var(--fs-sm);
+  color: var(--color-primary);
 }
 .btn-secondary {
   background-color: transparent;
