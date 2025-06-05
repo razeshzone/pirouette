@@ -275,9 +275,9 @@ h6 {
   color: rgba(var(--white-rgb), 1);
 }
 .btn-green-blue {
-  background: var(--color-light-green);
-  border-color: var(--color-light-green);
-  color: var(--color-lightest-blue);
+  background: var(--color-green);
+  border-color: var(--color-green);
+  color: rgba(var(--white-rgb), 1);
 }
 .btn-green-blue:hover{
   background: var(--color-primary);
