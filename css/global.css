@@ -207,6 +207,9 @@ h6 {
 .fs-xxxl{
   font-size: var(--fs-xxxl);
 }
+.fs-15 {
+  font-size: 15px !important;
+}
 .font-primary {
   font-family: var(--font-primary);
 }
@@ -225,7 +228,7 @@ h6 {
 }
 .btn-secondary {
   background-color: transparent;
-  color: var(--color-primary);
+  color: var(--color-light-blue);
   font-weight: var(--fw-700);
 }
 .btn-tertiary {
@@ -251,7 +254,7 @@ h6 {
 .btn-secondary:focus,
 .btn-secondary:active,
 .btn-secondary.active {
-  background: var(--color-primary);
+  background: var(--color-light-blue);
   color: rgba(var(--white-rgb), 1);
 }
 .btn-secondary:hover svg path,
@@ -313,13 +316,13 @@ h6 {
 }
 
 .color-yellow {
-  color: var(--color-yellow);
+  color: var(--color-yellow) !important;
 }
 .color-blue {
-  color: var(--color-primary);
+  color: var(--color-primary) !important;
 }
 .color-light-blue {
-  color: var(--color-light-blue);
+  color: var(--color-light-blue) !important;
 }
 .color-green {
   color: var(--color-green);
@@ -335,13 +338,19 @@ h6 {
   border-color: var(--color-primary);
 }
 .border-light-blue {
-  border-color: var(--color-light-blue);
+  border-color: var(--color-light-blue) !important;
 }
 .border-green {
-  border-color: var(--color-green);
+  border-color: var(--color-green) !important;
 }
 .border-light-green {
-  border-color: var(--color-light-green);
+  border-color: var(--color-light-green) !important;
+}
+.mt-custom{
+  margin-top: var(--space-md);
+}
+p{
+  font-family: var(--font-secondary);
 }
 /* Theme scheme */
 @media (prefers-color-scheme: dark) {
