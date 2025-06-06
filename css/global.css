@@ -207,6 +207,12 @@ h6 {
 .fs-xxxl{
   font-size: var(--fs-xxxl);
 }
+.font-primary {
+  font-family: var(--font-primary);
+}
+.font-secondary {
+  font-family: var(--font-secondary);
+}
 .btn-primary,
 .btn-secondary,
 .btn-tertiary {
