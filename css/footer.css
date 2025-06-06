@@ -32,7 +32,9 @@
   color: var(--color-primary);
 }
 .f-logo{
-  width: clamp(120px, 3.2px + 4vw, 200px);
+  /* width: clamp(120px, 3.2px + 4vw, 200px); */
+  width: 100%;
+  max-width: 200px;
 }
 .footer .footer-btm{
   background-color: var(--color-primary);
